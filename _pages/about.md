@@ -1,7 +1,10 @@
 ---
-title: "关于 | About"
-permalink: /about/
+permalink: /
+title: "About Me | 个人简介"
 author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
 ---
 
 ## 个人简介 | Biography
