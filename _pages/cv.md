@@ -9,56 +9,134 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## 教育经历
+| 学校名 | 专业 | 时间 |
+| --- | --- | --- |
+| 清华大学 | 计算机科学与技术 | 2013.09 - 2017.07 |
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Education
+| University | Major | Period |
+| --- | --- | --- |
+| Tsinghua University | Computer Science and Technology | 2013.09 - 2017.07 |
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## 工作经历
+### 安徽华米信息科技有限公司 - AI大模型专家 (2024.11 - 至今)
+- 负责Amazfit智能手表语音助手Flow的AI云端工作
+- 产品功能沟通定义
+- 基于大模型的产品能力实现
+- 评估验证
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+### 北京原子回声智能科技有限公司 - 大模型负责人＆联合创始人 (2022.04 - 至今)
+- 主导Atom系列大语言模型研发
+- 构建全流程技术体系
+- Llama中文社区联合发起人
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+### 北京循环智能科技有限公司 - 算法研究员 (2020.03 - 2022.04)
+- 自然语言处理算法研发
+- 大模型训练与优化
+
+## Work Experience
+### Huami Technology - AI Large Model Expert (2024.11 - Present)
+- Responsible for AI cloud work of Amazfit smart watch voice assistant Flow
+- Product feature communication and definition
+- Implementation of product capabilities based on large models
+- Evaluation and validation
+
+### Atom Echo - Large Model Lead & Co-founder (2022.04 - Present)
+- Led the development of Atom series large language models
+- Built end-to-end technical system
+- Co-founder of Llama Chinese community
+
+### Recurrent AI - Algorithm Researcher (2020.03 - 2022.04)
+- NLP algorithm development
+- Large model training and optimization
+
+## 项目经历
+### Atom系列大语言模型
+- 主导研发Atom-1B/7B/13B等模型，覆盖轻量到通用场景需求
+- 建立200TB+中文语料清洗体系，完成多轮数据去重、敏感信息过滤
+- 构建推理服务引擎，支持32K上下文长度，实现高效部署
+- 模型HuggingFace下载量超20万次，落地知识库报告生成、内容生成等多场景
+
+### AskOnce个性化知识库产品
+- 基于Atom大模型的企业级知识管理平台
+- 支持PDF/Word/Excel等多格式文档解析，构建动态知识库索引
+- 开发自然语言交互界面，响应时效压缩至秒级
+- 建立标准化知识萃取流程，员工问题解决效率提升60%+
+
+### 宝马企业内部资料问答系统
+- 实现企业文档自动化归纳分类与结构化处理
+- 开发定制化检索增强生成(RAG)架构，答案准确率达行业领先水平
+- 支持与企业OA/CRM系统集成，形成内部知识流转闭环
+
+### 涉密项目内部资料问答系统
+- 实现日均百万级多语言涉密文档自动化解析
+- 集成涉密数据分级管控机制，保障敏感信息处理合规
+- 建立数据溯源追踪系统，完整记录文档处理全链路日志
+
+### 通用数据治理算法能力平台
+- 支持文本/音频双模态数据治理全流程
+- 集成20+核心算法能力：文本分类/实体抽取/翻译/合规检测等
+- 覆盖金融、法律、医疗等多领域数据治理需求
+
+### 分类驱动电销实时话术推荐系统
+- 预处理百万级历史对话文本，提取500+高频应答话术
+- 实现毫秒级话术推荐响应，减少人工决策时间30%
+- 落地电销外呼及客服IM场景，提升沟通效率与标准化水平
+
+## Projects
+### Atom Series Large Language Models
+- Led development of Atom-1B/7B/13B models covering lightweight to general scenarios
+- Established 200TB+ Chinese corpus cleaning system with deduplication and sensitive info filtering
+- Built inference service engine supporting 32K context length for efficient deployment
+- Models downloaded over 200,000 times on HuggingFace, applied in report generation and content creation
+
+### AskOnce Personalized Knowledge Base
+- Enterprise knowledge management platform based on Atom LLM
+- Supports multi-format document parsing (PDF/Word/Excel) with dynamic indexing
+- Developed natural language interface with second-level response time
+- Established standardized knowledge extraction process, improving efficiency by 60%+
+
+### BMW Internal Q&A System
+- Automated classification and structuring of corporate documents
+- Developed custom RAG architecture with industry-leading accuracy
+- Integrated with OA/CRM systems to form knowledge circulation loop
+
+### Confidential Project Q&A System
+- Processed millions of multilingual confidential documents daily
+- Implemented multi-level data security controls for sensitive information
+- Established full-chain audit logging for document processing
+
+### General Data Governance Platform
+- End-to-end governance for text/audio multimodal data
+- Integrated 20+ core algorithms: text classification, entity extraction, translation, etc.
+- Served finance, legal, healthcare and other industries
+
+### Sales Conversation Recommendation System
+- Processed millions of historical sales dialogues to extract 500+ responses
+- Achieved millisecond-level recommendation response, reducing decision time by 30%
+- Deployed in outbound sales and customer service scenarios
+
+## 技能
+- 自然语言处理
+- 大语言模型训练与调优
+- 多模态模型开发
+- 团队管理与协作
+
+## Skills
+- Natural Language Processing
+- Large Language Model Training & Fine-tuning
+- Multimodal Model Development
+- Team Management & Collaboration
+
+## 出版物
+- Yongle Li, Zheng Zhang, 等. AtomTool: Empowering Large Language Models with Tool Utilization Skills. PRCV 2024.
+- Yongle Li, Bo Liu, Sheng Huang, Zheng Zhang, Xiaotong Yuan, Richang Hong. Communication-Efficient and Personalized Federated LLM Fine-Tuning via Tri-Matrix Adaptation.
+- 张俊祺、张正等：《Llama 大模型实践指南》电子工业出版社，2024
+- Zijun Chen, Zheng Zhang, 等. Unveiling Uncertainty: Calibration of Multimodal LLMs.
+
+## Publications
+- Yongle Li, Zheng Zhang, et al. AtomTool: Empowering Large Language Models with Tool Utilization Skills. PRCV 2024.
+- Yongle Li, Bo Liu, Sheng Huang, Zheng Zhang, Xiaotong Yuan, Richang Hong. Communication-Efficient and Personalized Federated LLM Fine-Tuning via Tri-Matrix Adaptation.
+- Junqi Zhang, Zheng Zhang, et al. "Llama Large Model Practice Guide" Publishing House of Electronics Industry, 2024
+- Zijun Chen, Zheng Zhang, et al. Unveiling Uncertainty: Calibration of Multimodal LLMs.
