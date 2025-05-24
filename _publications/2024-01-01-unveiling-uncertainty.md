@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2024-01-01-unveiling-uncertainty
 excerpt: 'Analyzing uncertainty in multimodal LLMs | 多模态大语言模型的不确定性分析'
-date: 2025
+date: 2025-01-01
 venue: 'Proceedings of the 31st International Conference on Computational Linguistics | 第31届国际计算语言学会议'
 paperurl: 'https://aclanthology.org/2025.coling-main.208.pdf'
 citation: 'Zijun Chen, Wenbo Hu, Guande He, Zhijie Deng, Zheng Zhang, Richang Hong. (2024). "Unveiling Uncertainty: Calibration and Performance of Multimodal Large Language Models"'

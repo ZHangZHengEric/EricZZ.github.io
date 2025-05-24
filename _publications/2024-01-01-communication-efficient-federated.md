@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2024-01-01-communication-efficient-federated
 excerpt: 'Efficient federated learning for large language models | 大语言模型的高效联邦学习'
-date: 2024-01-01
+date: 2025-03-01
 venue: 'To be published | 待发表'
 paperurl: 'https://arxiv.org/abs/2503.23869'
 citation: 'Yongle Li, Bo Liu, Sheng Huang, Zheng Zhang, Xiaotong Yuan, Richang Hong. (2024). "Communication-Efficient and Personalized Federated LLM Fine-Tuning via Tri-Matrix Adaptation"'
