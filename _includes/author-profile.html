@@ -38,6 +38,9 @@
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
+      {% if author.wechat %}
+        <li><<i class="fab fa-fw fa-weibo icon-pad-right" aria-hidden="true"></i>Wechat</a>{{ author.wechat }}</li>
+      {% endif %}
       {% if author.academia %}
         <li><a href="{{ author.academia }}"><i class="ai ai-academia ai-fw icon-pad-right" aria-hidden="true"></i>Academia</a></li>
       {% endif %}
