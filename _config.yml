@@ -22,7 +22,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "https://avatars.githubusercontent.com/u/45086558?s=400&v=4"
+  avatar           : "profile.png"
   name             : "张正 Eric ZZ"
   bio              : "大模型基础研究与应用专家"
   location         : "北京"

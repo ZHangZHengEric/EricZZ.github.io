@@ -15,31 +15,16 @@
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-<script>
-    MathJax = {
-        tex: {
-            packages: { '[+]': ['base', 'autoload'] },
-            // inlineMath: [ // 禁用 $...$，改用 \(...\) 作为行内公式
-            //     ['\\(', '\\)']
-            // ],
-            // displayMath: [ // 块级公式用 \[...\]
-            //     ['$$', '$$'],
-            //     ['\\[', '\\]']
-            // ],
-            processEscapes: true,      // use \$ to produce a literal dollar sign
-            processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-        },
-        processRefs: true,         // process \ref{...} outside of math mode
-        digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
-        // pattern for recognizing numbers
-        tags: 'ams',              // or 'ams' or 'all'
-        tagSide: 'right',          // side for \tag macros
-        tagIndent: '0.8em',        // amount to indent tags
-        useLabelIds: true,         // use label name rather than tag for ids
-        maxMacros: 10000,          // maximum number of macro substitutions per expression
-        maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-    };
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <!-- end custom head snippets -->
