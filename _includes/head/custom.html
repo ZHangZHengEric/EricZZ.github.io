@@ -28,7 +28,6 @@
             // ],
             processEscapes: true,      // use \$ to produce a literal dollar sign
             processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-
         },
         processRefs: true,         // process \ref{...} outside of math mode
         digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
@@ -41,6 +40,6 @@
         maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
     };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
 <!-- end custom head snippets -->
