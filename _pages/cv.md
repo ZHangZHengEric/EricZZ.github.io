@@ -10,11 +10,13 @@ redirect_from:
 {% include base_path %}
 
 ## 教育经历
+
 | 学校名 | 专业 | 时间 |
 | --- | --- | --- |
 | 清华大学 | 计算机科学与技术 | 2013.09 - 2017.07 |
 
 ## Education
+
 | University | Major | Period |
 | --- | --- | --- |
 | Tsinghua University | Computer Science and Technology | 2013.09 - 2017.07 |
