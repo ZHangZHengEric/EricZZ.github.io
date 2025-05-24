@@ -11,8 +11,8 @@ main:
   - title: "出版物/Publications"
     url: /publications/
     
-  - title: "作品集/Portfolio"
-    url: /portfolio/
+  # - title: "作品集/Portfolio"
+  #   url: /portfolio/
         
   - title: "博客文章/Blog Posts"
     url: /year-archive/
