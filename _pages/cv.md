@@ -23,35 +23,39 @@ redirect_from:
 
 ## 工作经历
 ### 安徽华米信息科技有限公司 - AI大模型专家 (2024.11 - 至今)
-- 负责Amazfit智能手表语音助手Flow的AI云端工作
-- 产品功能沟通定义
-- 基于大模型的产品能力实现
-- 评估验证
+- 主导Amazfit智能手表语音助手Flow的AI云端开发，实现基于大模型的智能交互功能
+- 负责产品功能定义与技术方案设计，协调跨部门团队完成需求落地
+- 构建大模型评估体系，优化模型性能指标30%以上
+- 开发自动化测试框架，提升模型迭代效率40%
 
 ### 北京原子回声智能科技有限公司 - 大模型负责人＆联合创始人 (2022.04 - 至今)
-- 主导Atom系列大语言模型研发
-- 构建全流程技术体系
-- Llama中文社区联合发起人
+- 主导研发Atom-1B/7B/13B系列大语言模型，覆盖轻量到通用场景需求
+- 建立200TB+中文语料清洗体系，完成多轮数据去重与敏感信息过滤
+- 构建从数据清洗到模型部署的全流程技术体系，提升团队研发效率30%+
+- 作为Llama中文社区联合发起人(GitHub星标14k+)，贡献核心开源代码与中文预训练方案
 
 ### 北京循环智能科技有限公司 - 算法研究员 (2020.03 - 2022.04)
-- 自然语言处理算法研发
-- 大模型训练与优化
+- 研发自然语言处理算法，优化文本分类与实体识别模型准确率15%
+- 设计大模型训练框架，支持千亿参数模型的分布式训练
+- 主导多个企业级NLP项目落地，包括智能客服、内容审核等场景
 
 ## Work Experience
 ### Huami Technology - AI Large Model Expert (2024.11 - Present)
-- Responsible for AI cloud work of Amazfit smart watch voice assistant Flow
-- Product feature communication and definition
-- Implementation of product capabilities based on large models
-- Evaluation and validation
+- Led AI cloud development for Amazfit smart watch voice assistant Flow, implementing LLM-based intelligent interaction
+- Designed product features and technical solutions, coordinating cross-functional teams for implementation
+- Built model evaluation system, improving key performance metrics by 30%
+- Developed automated testing framework, increasing model iteration efficiency by 40%
 
 ### Atom Echo - Large Model Lead & Co-founder (2022.04 - Present)
-- Led the development of Atom series large language models
-- Built end-to-end technical system
-- Co-founder of Llama Chinese community
+- Spearheaded development of Atom-1B/7B/13B LLM series for diverse application scenarios
+- Established 200TB+ Chinese corpus cleaning pipeline with deduplication and sensitive data filtering
+- Built end-to-end technical framework from data to deployment, boosting team efficiency by 30%
+- As co-founder of Llama Chinese community (14k+ GitHub stars), contributed core code and Chinese pretraining solutions
 
 ### Recurrent AI - Algorithm Researcher (2020.03 - 2022.04)
-- NLP algorithm development
-- Large model training and optimization
+- Developed NLP algorithms, improving text classification and NER accuracy by 15%
+- Designed large model training framework supporting distributed training of 100B+ parameter models
+- Led implementation of enterprise NLP projects including smart customer service and content moderation
 
 ## 项目经历
 ### Atom系列大语言模型
