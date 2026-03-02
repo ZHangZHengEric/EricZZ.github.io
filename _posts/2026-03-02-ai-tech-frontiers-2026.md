@@ -10,7 +10,7 @@ tags:
   - 技术趋势
 ---
 
-![AI 技术前沿概览](images/post_images/ai_hotspot_20260302_001.png)
+![AI 技术前沿概览](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai_hotspot_20260302_001.png)
 
 ## 一、2025 年回顾：AI 如何「接管」世界
 
@@ -243,6 +243,6 @@ Deloitte 的总结很精辟：
 
 ---
 
-![AI 技术未来展望](images/post_images/ai_hotspot_20260302_002.png)
+![AI 技术未来展望](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai_hotspot_20260302_002.png)
 
 *本文基于 2026 年 3 月 2 日收集的 15 条 AI/技术热点新闻整理而成，旨在为读者提供全面的技术趋势洞察。*
