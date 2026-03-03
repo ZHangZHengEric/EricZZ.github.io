@@ -159,19 +159,12 @@ incremental: false
 
 
 # Markdown Processing
+# Note: GitHub Pages uses its own kramdown configuration
+# Fenced code blocks (```) are supported natively by GitHub Pages
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
   math_engine: mathjax
-  hard_wrap: false
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:
     css_class: highlight
-    default_lang: text
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
 
 
 # These settings control the types of collections used by the template
@@ -310,7 +303,8 @@ tag_archive:
 
 # HTML Compression
 # - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+# Disabled to prevent code block issues
+# compress_html:
+#   clippings: all
+#   ignore:
+#     envs: development
