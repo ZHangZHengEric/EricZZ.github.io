@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>SignatureDoesNotMatch</Code>
+  <Message>The request signature we calculated does not match the signature you provided. Check your key and signing method.</Message>
+  <RequestId>69AC27FD8C0C736EC60D8BA3</RequestId>
+  <HostId>dashscope-a717.oss-accelerate.aliyuncs.com</HostId>
+  <OSSAccessKeyId>LTAI5tPxpiCM2hjmWrFXrym1</OSSAccessKeyId>
+  <SignatureProvided>h4xQZM1rP3pYQJvL9/7+qN8xWZg=</SignatureProvided>
+  <StringToSign>GET
+
+
+1772976516
+/dashscope-a717/1d/b6/20260307/dc4088fc/25960210-y516b9R4_364e311400b9.png</StringToSign>
+  <StringToSignBytes>47 45 54 0A 0A 0A 31 37 37 32 39 37 36 35 31 36 0A 2F 64 61 73 68 73 63 6F 70 65 2D 61 37 31 37 2F 31 64 2F 62 36 2F 32 30 32 36 30 33 30 37 2F 64 63 34 30 38 38 66 63 2F 32 35 39 36 30 32 31 30 2D 79 35 31 36 62 39 52 34 5F 33 36 34 65 33 31 31 34 30 30 62 39 2E 70 6E 67 </StringToSignBytes>
+  <EC>0002-00000040</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0002-00000040</RecommendDoc>
+</Error>
