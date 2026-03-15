@@ -4,7 +4,7 @@ date: 2026-03-15
 categories: [AI, Multi-Agent]
 tags: [Sage, 多智能体, AgentFlow, 编排, 可观测性, Sandbox, MCP]
 header:
-  teaser: {{ "/images/post_images/2026-03-15-sage-ai-editorial-cover.png" | absolute_url }}
+  teaser: /images/post_images/2026-03-15-sage-ai-editorial-cover.png
 ---
 
 > 话题引子：量子位在《我用10块钱的「熟虾」，搞了个AI编辑部！》里展示了一个“浏览器里开箱即用的多智能体编辑部”工作流（总编/记者/编辑/校对/排版/运营）。我读完的第一反应是：**这类 demo 一旦进入真实生产，最大的挑战不在“能不能跑”，而在“能不能稳定、可控、可扩展地跑”**。
