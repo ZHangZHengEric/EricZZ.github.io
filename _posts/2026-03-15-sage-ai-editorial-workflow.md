@@ -4,7 +4,7 @@ date: 2026-03-15
 categories: [AI, Multi-Agent]
 tags: [Sage, 多智能体, AgentFlow, 编排, 可观测性, Sandbox, MCP]
 header:
-  teaser: /images/2026-03-15-sage-ai-editorial-cover.png
+  teaser: /images/post_images/2026-03-15-sage-ai-editorial-cover.png
 ---
 
 > 话题引子：量子位在《我用10块钱的「熟虾」，搞了个AI编辑部！》里展示了一个“浏览器里开箱即用的多智能体编辑部”工作流（总编/记者/编辑/校对/排版/运营）。我读完的第一反应是：**这类 demo 一旦进入真实生产，最大的挑战不在“能不能跑”，而在“能不能稳定、可控、可扩展地跑”**。
@@ -63,7 +63,7 @@ Sage 里面我重点打磨了几件事：
 
 下面这张概念图对应的是我在 Sage 里最常用的一种分层视角：
 
-![Sage 多智能体平台架构概念图](/images/2026-03-15-sage-architecture-concept.png)
+![Sage 多智能体平台架构概念图](/images/post_images/2026-03-15-sage-architecture-concept.png)
 
 ## 3. 用 Sage 复刻“AI编辑部”：我会怎么设计？
 
@@ -122,7 +122,7 @@ Sage 里面我重点打磨了几件事：
 
 这张图是我脑中最常见的对比：
 
-![云端开箱即用 vs 本地自建复杂环境](/images/2026-03-15-sage-vs-local-setup.png)
+![云端开箱即用 vs 本地自建复杂环境](/images/post_images/2026-03-15-sage-vs-local-setup.png)
 
 我的观点是：
 
