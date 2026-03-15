@@ -1,0 +1,42 @@
+/*
+  16:9 image presentation for posts.
+  Works for Markdown-generated <img> inside <p> and explicit <img> tags.
+
+  Strategy:
+  - Constrain max height and width so high-res square images don't explode layout.
+  - Use CSS aspect-ratio + object-fit: cover to show 16:9 crop.
+  - Keep accessibility: images remain <img>; we don't hide them.
+*/
+
+/* Apply to post content area (Minimal Mistakes theme compatible) */
+.page__content img,
+.archive__item-excerpt img,
+.entries-list img {
+  display: block;
+  margin: 1rem auto;
+  width: min(100%, 920px);
+  /* 16:9 frame */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* prevent tiny icons/logos from being blown up */
+.page__content img.emoji,
+.page__content img.inline,
+.page__content img.no-aspect {
+  aspect-ratio: auto;
+  object-fit: contain;
+  width: auto;
+  max-width: 100%;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* On very wide screens, allow slightly larger */
+@media (min-width: 1280px) {
+  .page__content img {
+    width: min(100%, 1040px);
+  }
+}

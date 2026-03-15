@@ -4,12 +4,12 @@ date: 2026-03-11
 author: Eric Zhang
 tags: [AI, 大模型，智能体，联邦学习，MiniMax, 具身智能]
 description: "今天，作为一个人工智能研究员，我亲眼见证了一场深刻的技术变革。2026 年，AI 正式从理论探索走向规模化落地，智能体成为新的主战场。"
-image: "https://EricZZ.github.io/images/ai-agents-cover.png"
+image: "https://zhangzhengeric.github.io/EricZZ.github.io/images/ai-agents-cover.png"
 ---
 
 # 2026 AI 元年：从大模型到智能体的范式转移，以及我看到的三大突破
 
-![AI 智能体与数据流动](https://EricZZ.github.io/images/ai-agents-cover.png)
+![AI 智能体与数据流动](https://zhangzhengeric.github.io/EricZZ.github.io/images/ai-agents-cover.png)
 > *图 1：AI 智能体与数据流动的抽象视觉，象征多智能体系统的协同工作*
 
 > 今天，作为一个人工智能研究员，我亲眼见证了一场深刻的技术变革。2026 年，AI 正式从理论探索走向规模化落地，智能体成为新的主战场。
@@ -78,7 +78,7 @@ image: "https://EricZZ.github.io/images/ai-agents-cover.png"
 
 #### 1. 智能体（Agent）成为主战场
 
-![2026 AI 技术趋势](https://EricZZ.github.io/images/ai-trends-infographic.png)
+![2026 AI 技术趋势](https://zhangzhengeric.github.io/EricZZ.github.io/images/ai-trends-infographic.png)
 > *图 2:2026 年十大 AI 技术趋势可视化，涵盖多模态、具身智能、智能体等方向*
 
 报告明确指出，2026 年是**智能体规模化落地元年**。这意味着：
@@ -95,7 +95,7 @@ image: "https://EricZZ.github.io/images/ai-agents-cover.png"
 
 #### 3. 联邦学习的突破性进展
 
-![联邦学习概念图](https://EricZZ.github.io/images/federated-learning-concept.png)
+![联邦学习概念图](https://zhangzhengeric.github.io/EricZZ.github.io/images/federated-learning-concept.png)
 > *图 3：联邦学习概念可视化，展示分布式隐私保护学习的架构*
 
 报告特别提到，**联邦学习在隐私敏感场景中的应用正在加速**。悉尼科技大学联合港理工的研究打破了"一刀切"的联邦推荐模式，为将更复杂的视觉 - 语言模型甚至生成式 AI 引入隐私敏感场景铺平了道路。
