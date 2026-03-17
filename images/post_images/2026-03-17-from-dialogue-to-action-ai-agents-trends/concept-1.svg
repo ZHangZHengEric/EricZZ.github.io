@@ -1,0 +1,73 @@
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1f4d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  
+  <!-- 中心核心概念：AI Agent -->
+  <g transform="translate(640, 360)">
+    <!-- 核心圆圈 -->
+    <circle cx="0" cy="0" r="100" fill="#00d4ff" opacity="0.2" stroke="#00d4ff" stroke-width="3"/>
+    <circle cx="0" cy="0" r="70" fill="#00d4ff" opacity="0.4"/>
+    
+    <!-- 智能体图标抽象 -->
+    <g transform="translate(0, 0)">
+      <circle cx="0" cy="-20" r="15" fill="#ffffff" opacity="0.9"/>
+      <ellipse cx="0" cy="25" rx="25" ry="15" fill="#ffffff" opacity="0.9"/>
+    </g>
+    
+    <!-- 周围辐射圈 -->
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.3"/>
+    <circle cx="0" cy="0" r="200" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.2"/>
+  </g>
+  
+  <!-- 四个核心能力节点 -->
+  <!-- 感知 Perception -->
+  <g transform="translate(300, 200)">
+    <circle cx="0" cy="0" r="40" fill="#b2f2bb" opacity="0.3" stroke="#2f9e44" stroke-width="2"/>
+    <rect x="-15" y="-15" width="30" height="30" fill="#2f9e44" opacity="0.6" rx="5"/>
+    <circle cx="-8" cy="-8" r="4" fill="#ffffff"/>
+    <circle cx="8" cy="-8" r="4" fill="#ffffff"/>
+    <path d="M -10 10 Q 0 15 10 10" stroke="#ffffff" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 思考 Reasoning -->
+  <g transform="translate(980, 200)">
+    <circle cx="0" cy="0" r="40" fill="#ffd43b" opacity="0.3" stroke="#e67700" stroke-width="2"/>
+    <polygon points="0,-20 20,15 -20,15" fill="#e67700" opacity="0.6"/>
+    <circle cx="0" cy="0" r="8" fill="#ffffff"/>
+  </g>
+  
+  <!-- 行动 Action -->
+  <g transform="translate(980, 520)">
+    <circle cx="0" cy="0" r="40" fill="#ffc9c9" opacity="0.3" stroke="#e03131" stroke-width="2"/>
+    <polygon points="-15,-15 15,-15 0,15" fill="#e03131" opacity="0.6"/>
+    <line x1="-10" y1="10" x2="10" y2="-10" stroke="#ffffff" stroke-width="3"/>
+  </g>
+  
+  <!-- 记忆 Memory -->
+  <g transform="translate(300, 520)">
+    <circle cx="0" cy="0" r="40" fill="#d0b2ff" opacity="0.3" stroke="#7048e8" stroke-width="2"/>
+    <rect x="-18" y="-12" width="36" height="24" fill="#7048e8" opacity="0.6" rx="3"/>
+    <line x1="-12" y1="-4" x2="12" y2="-4" stroke="#ffffff" stroke-width="2"/>
+    <line x1="-12" y1="2" x2="12" y2="2" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  
+  <!-- 连接线 -->
+  <line x1="540" y1="280" x2="340" y2="240" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <line x1="740" y1="280" x2="940" y2="240" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <line x1="740" y1="440" x2="940" y2="480" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <line x1="540" y1="440" x2="340" y2="480" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  
+  <!-- 科技感装饰 -->
+  <g opacity="0.1">
+    <circle cx="100" cy="100" r="50" fill="none" stroke="#00d4ff" stroke-width="1"/>
+    <circle cx="1180" cy="100" r="50" fill="none" stroke="#00d4ff" stroke-width="1"/>
+    <circle cx="100" cy="620" r="50" fill="none" stroke="#00d4ff" stroke-width="1"/>
+    <circle cx="1180" cy="620" r="50" fill="none" stroke="#00d4ff" stroke-width="1"/>
+  </g>
+</svg>

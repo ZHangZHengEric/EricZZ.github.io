@@ -1,0 +1,100 @@
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1f4d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cycleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0066ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGradient)"/>
+  
+  <!-- 中心循环箭头 -->
+  <g transform="translate(640, 360)">
+    <!-- 外圈循环路径 -->
+    <circle cx="0" cy="0" r="200" fill="none" stroke="url(#cycleGradient)" stroke-width="4" opacity="0.6" stroke-dasharray="20,10">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- 对话阶段 (顶部) -->
+    <g transform="translate(0, -180)">
+      <circle cx="0" cy="0" r="45" fill="#00d4ff" opacity="0.4" stroke="#00d4ff" stroke-width="3"/>
+      <circle cx="0" cy="-12" r="12" fill="#ffffff" opacity="0.8"/>
+      <circle cx="0" cy="12" r="12" fill="#ffffff" opacity="0.8"/>
+      <line x1="-15" y1="0" x2="15" y2="0" stroke="#ffffff" stroke-width="2"/>
+    </g>
+    
+    <!-- 思考阶段 (右侧) -->
+    <g transform="translate(180, 0)">
+      <circle cx="0" cy="0" r="45" fill="#ffd43b" opacity="0.4" stroke="#ffd43b" stroke-width="3"/>
+      <polygon points="0,-18 15,10 -15,10" fill="#ffd43b" opacity="0.8"/>
+      <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+    </g>
+    
+    <!-- 行动阶段 (底部) -->
+    <g transform="translate(0, 180)">
+      <circle cx="0" cy="0" r="45" fill="#ff6b35" opacity="0.4" stroke="#ff6b35" stroke-width="3"/>
+      <polygon points="-18,-18 18,-18 0,18" fill="#ff6b35" opacity="0.8"/>
+      <line x1="-12" y1="12" x2="12" y2="-12" stroke="#ffffff" stroke-width="3"/>
+    </g>
+    
+    <!-- 学习/反馈阶段 (左侧) -->
+    <g transform="translate(-180, 0)">
+      <circle cx="0" cy="0" r="45" fill="#b2f2bb" opacity="0.4" stroke="#b2f2bb" stroke-width="3"/>
+      <path d="M -15 -10 Q 0 15 15 -10" stroke="#2f9e44" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="-8" cy="-8" r="4" fill="#2f9e44"/>
+      <circle cx="8" cy="-8" r="4" fill="#2f9e44"/>
+    </g>
+    
+    <!-- 阶段间连接箭头 -->
+    <!-- 对话 -> 思考 -->
+    <path d="M 35 -160 Q 140 -90 160 0" stroke="#00d4ff" stroke-width="3" fill="none" opacity="0.7">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <polygon points="160,0 150,-10 150,10" fill="#00d4ff" opacity="0.7"/>
+    
+    <!-- 思考 -> 行动 -->
+    <path d="M 160 35 Q 90 140 0 160" stroke="#ffd43b" stroke-width="3" fill="none" opacity="0.7">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <polygon points="0,160 -10,150 10,150" fill="#ffd43b" opacity="0.7"/>
+    
+    <!-- 行动 -> 学习 -->
+    <path d="M -35 160 Q -140 90 -160 0" stroke="#ff6b35" stroke-width="3" fill="none" opacity="0.7">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <polygon points="-160,0 -150,-10 -150,10" fill="#ff6b35" opacity="0.7"/>
+    
+    <!-- 学习 -> 对话 -->
+    <path d="M -160 -35 Q -90 -140 0 -160" stroke="#b2f2bb" stroke-width="3" fill="none" opacity="0.7">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+    <polygon points="0,-160 -10,-150 10,-150" fill="#b2f2bb" opacity="0.7"/>
+    
+    <!-- 中心核心 -->
+    <circle cx="0" cy="0" r="30" fill="url(#cycleGradient)" opacity="0.5"/>
+    <circle cx="0" cy="0" r="15" fill="#ffffff" opacity="0.8"/>
+  </g>
+  
+  <!-- 科技感装饰元素 -->
+  <g opacity="0.1">
+    <circle cx="150" cy="150" r="60" fill="none" stroke="#00d4ff" stroke-width="2"/>
+    <circle cx="1130" cy="150" r="60" fill="none" stroke="#00d4ff" stroke-width="2"/>
+    <circle cx="150" cy="570" r="60" fill="none" stroke="#00d4ff" stroke-width="2"/>
+    <circle cx="1130" cy="570" r="60" fill="none" stroke="#00d4ff" stroke-width="2"/>
+  </g>
+  
+  <!-- 背景网格 -->
+  <g opacity="0.05">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d4ff" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="1280" height="720" fill="url(#grid)"/>
+  </g>
+</svg>
