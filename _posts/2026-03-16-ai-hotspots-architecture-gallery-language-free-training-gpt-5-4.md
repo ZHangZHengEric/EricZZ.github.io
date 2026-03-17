@@ -2,7 +2,7 @@
 layout: single
 title: "本周 AI 热点：大模型架构图画廊、‘无语言训练’猜想，以及 GPT‑5.4 的职业化拐点"
 date: 2026-03-16
-last_modified_at: 2026-03-16
+last_modified_at: 2026-03-17
 author_profile: true
 categories:
   - AI
@@ -18,9 +18,11 @@ tags:
   - 大模型架构
   - 训练数据
   - Agentic
+image:
+  path: https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/header.png
 header:
-  teaser: /assets/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/header.png
-  overlay_image: /assets/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/header.png
+  teaser: https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/header.png
+  overlay_image: https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/header.png
   overlay_filter: 0.25
 ---
 
@@ -38,7 +40,7 @@ header:
 
 配图（我用 AI 生成的抽象示意，不含任何原文图）：
 
-![LLM architecture gallery](/assets/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/header.png)
+![LLM architecture gallery](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/header.png)
 
 ### 我自己的判断
 
@@ -64,7 +66,7 @@ header:
 
 配图（抽象示意）：
 
-![language-free training](/assets/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/language_free.png)
+![language-free training](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/language_free.png)
 
 ### 风险与边界
 
@@ -88,7 +90,7 @@ OpenAI 最近发布了 GPT‑5.4（中文官方页面）。它的定位措辞很
 
 配图（抽象示意）：
 
-![agentic workflow](/assets/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/agentic_workflow.png)
+![agentic workflow](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-hotspots-architecture-gallery-language-free-training-gpt-5-4/agentic_workflow.png)
 
 ### 我自己的判断
 
