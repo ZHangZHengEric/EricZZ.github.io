@@ -48,6 +48,72 @@
   font-size: $type-size-4;
 }
 
+.hero__author {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem 1.125rem;
+  max-width: 920px;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+}
+
+.hero__author-avatar img {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.hero__author-content > :last-child {
+  margin-bottom: 0;
+}
+
+.hero__author-name {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.hero__author-pronouns,
+.hero__author-bio {
+  margin: 0 0 0.4rem;
+}
+
+.hero__author-links {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.hero__author-links li,
+.hero__author-links a {
+  font-size: 0.92rem;
+}
+
+.hero__author-links i {
+  margin-right: 0.35rem;
+}
+
+@include breakpoint($small) {
+  .hero__author {
+    padding: 1.1rem 1.2rem;
+  }
+}
+
+@include breakpoint(max-width $small) {
+  .hero__author {
+    flex-direction: column;
+  }
+}
+
 .page__content {
 
   h2 {
