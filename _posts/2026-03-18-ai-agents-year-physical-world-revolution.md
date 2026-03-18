@@ -1,11 +1,11 @@
 ---
 title: "AI智能体元年：从'云端对话'到'端侧执行'的物理世界革命"
 header:
-  teaser: https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/header.png
-  overlay_image: https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/header.png
+  teaser: https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/header.jpg
+  overlay_image: https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/header.jpg
   overlay_filter: 0.25
 image:
-  path: https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/header.png
+  path: https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/header.jpg
 
 author: Eric Zhang
 date: 2026-03-18
@@ -24,7 +24,7 @@ excerpt: "2026年为何被称为AI智能体元年？从理想汽车MindVLA-o1到
 
 这不仅仅是技术的迭代，而是一场从"云端对话"到"端侧执行"的物理世界革命。AI不再只是回答问题的聊天机器人，而是开始理解物理世界、执行复杂任务、甚至在我们身边自主行动的"智能伙伴"。
 
-**![AI 智能体元年封面图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/header.png)**  
+**![AI 智能体元年封面图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/header.jpg)**  
 *配图建议：展示从云端对话到端侧执行的演进时间轴，突出2026年作为转折点的标志性事件*
 
 ---
@@ -35,14 +35,14 @@ excerpt: "2026年为何被称为AI智能体元年？从理想汽车MindVLA-o1到
 
 从技术层面看，多模态大模型的成熟为智能体提供了"感知-理解-行动"的完整能力链。理想汽车发布的MindVLA-o1模型，正是这一趋势的典型代表。这款统一视觉-语言-动作（VLA）的自动驾驶大模型，不仅具备物理世界的理解能力，更重要的是，它能够通过世界模型与强化学习 infra，实现端到端的自动驾驶决策。这意味着，AI智能体不再只是"看"和"说"，而是真正具备了"行动"的能力。
 
-**![AI 智能体系统架构概念图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/concept-architecture.png)**  
+**![AI 智能体系统架构概念图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/concept-architecture.jpg)**  
 *配图建议：理想汽车MindVLA-o1模型的VLA架构示意图，展示视觉-语言-动作三模态的统一*
 
 从产业层面看，多家头部企业同时发布智能体产品，标志着技术从实验室走向规模化应用。腾讯云的QClaw在2026年3月迎来重大更新，成为首个支持语音、图片等多模态交互的AI智能体产品，并深度集成到微信小程序生态中。这种"生态级"的部署，意味着AI智能体不再是孤立的实验项目，而是开始融入我们日常使用的数字基础设施。
 
 更令人兴奋的是端侧AI的突破。高通推出的技术方案，能够将20亿参数模型部署在胸针等微型设备上，这补齐了个人AI生态的最后一块拼图。回想第二代骁龙8平台，它是全球首个能在Android手机上跑通端侧Stable Diffusion的平台；而如今，端侧AI已经从手机延伸到可穿戴设备，真正实现了"个人AI"的愿景。
 
-**![AI 智能体云边端协同示意图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/cloud-edge-devices.png)**  
+**![AI 智能体云边端协同示意图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/cloud-edge-devices.jpg)**  
 *配图建议：高通端侧AI部署的示意图，展示从手机到胸针等微型设备的演进*
 
 从生态层面看，AI智能体正在重塑人机交互的范式。过去三十年，互联网的发展围绕"应用（APP）"展开；而今天，AI智能体正在成为新的交互入口。用户不再需要打开特定的APP，而是通过自然语言与智能体对话，由智能体自主调用各种服务、完成任务。这种从"人找服务"到"服务找人"的转变，可能比移动互联网的诞生更具颠覆性。
@@ -59,7 +59,7 @@ excerpt: "2026年为何被称为AI智能体元年？从理想汽车MindVLA-o1到
 
 这种统一架构的意义在于，它让AI智能体能够处理更复杂的现实场景。比如自动驾驶，不仅需要"看"到路况，还需要"理解"交通规则，还需要"决定"如何避让，最后还要"执行"转向或刹车。MindVLA-o1的VLA架构，正是为了解决这一端到端的复杂问题而设计。
 
-**![从聊天机器人到自主智能体的演进对比图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/evolution-comparison.png)**  
+**![从聊天机器人到自主智能体的演进对比图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/evolution-comparison.jpg)**  
 *配图建议：对比传统烟囱式AI架构与统一VLA架构的差异，突出端到端处理的优势*
 
 **端侧部署的突破**
@@ -78,7 +78,7 @@ excerpt: "2026年为何被称为AI智能体元年？从理想汽车MindVLA-o1到
 
 这种编排能力意味着，AI智能体不再是单一功能的执行者，而是能够协调多个子任务、调用多个工具、完成复杂工作流的"项目经理"。比如，一篇完整的新闻报道，可以由智能体自主完成资料搜集、内容生成、图片创作、视频剪辑等一系列任务。
 
-**![AI 智能体行业落地场景图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/industry-scenarios.png)**  
+**![AI 智能体行业落地场景图](https://zhangzhengeric.github.io/EricZZ.github.io/images/post_images/ai-agents-year-physical-world-revolution/industry-scenarios.jpg)**  
 *配图建议：展示AI智能体编排复杂工作流的示意图，如从资料搜集到内容生成的全流程*
 
 ---
