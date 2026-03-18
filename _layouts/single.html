@@ -45,6 +45,18 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+      {% if page.excerpt %}
+        <div class="post-intro">
+          <div class="post-intro__layout">
+            <div class="post-intro__aside">
+              {% include post-intro-author-card.html %}
+            </div>
+            <div class="post-intro__main">
+              <p class="post-intro__excerpt">{{ page.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            </div>
+          </div>
+        </div>
+      {% endif %}
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}

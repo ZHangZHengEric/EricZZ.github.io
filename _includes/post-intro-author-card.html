@@ -1,0 +1,32 @@
+{% include base_path %}
+
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}
+{% else %}
+  {% assign author = site.author %}
+{% endif %}
+
+<div class="post-intro__author-card" itemscope itemtype="http://schema.org/Person">
+  {% if author.avatar %}
+    <div class="post-intro__author-avatar">
+      {% if author.avatar contains "://" %}
+        <img src="{{ author.avatar }}" alt="{{ author.name }}">
+      {% elsif author.avatar contains "/" %}
+        <img src="{{ author.avatar | prepend: base_path }}" alt="{{ author.name }}">
+      {% else %}
+        <img src="{{ author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ author.name }}">
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="post-intro__author-body">
+    {% if author.name %}<div class="post-intro__author-name">{{ author.name }}</div>{% endif %}
+    {% if author.bio %}<p class="post-intro__author-bio">{{ author.bio }}</p>{% endif %}
+
+    <ul class="post-intro__author-links">
+      {% if author.email %}<li><a href="mailto:{{ author.email }}">Email</a></li>{% endif %}
+      {% if author.github %}<li><a href="https://github.com/{{ author.github }}">GitHub</a></li>{% endif %}
+      {% if author.googlescholar %}<li><a href="{{ author.googlescholar }}">Scholar</a></li>{% endif %}
+    </ul>
+  </div>
+</div>
