@@ -20,12 +20,12 @@ $(document).ready(function () {
       $("html").attr("data-theme", "dark");
       $("#theme-toggle")
         .attr("aria-pressed", "true")
-        .attr("aria-label", "切换到浅色主题");
+        .attr("aria-label", "切换到浅色主题 / Switch to light theme");
     } else if (use_theme === "light") {
       $("html").removeAttr("data-theme");
       $("#theme-toggle")
         .attr("aria-pressed", "false")
-        .attr("aria-label", "切换到深色主题");
+        .attr("aria-label", "切换到深色主题 / Switch to dark theme");
     }
   };
 

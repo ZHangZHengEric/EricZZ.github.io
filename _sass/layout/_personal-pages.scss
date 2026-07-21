@@ -81,6 +81,23 @@ html[data-theme="dark"] .personal-page {
   margin: 0.55rem 0 1rem;
 }
 
+.personal-page__content .bilingual-en {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--personal-page-muted);
+  font-size: 0.92em;
+  line-height: 1.72;
+}
+
+.personal-page__content .bilingual-heading-en {
+  display: block;
+  margin: 0.25rem 0 0;
+  color: var(--personal-page-muted);
+  font-size: 0.78rem;
+  font-weight: 520;
+  line-height: 1.5;
+}
+
 .personal-page__content ul,
 .personal-page__content ol {
   margin: 0.75rem 0 1.5rem;
@@ -234,11 +251,24 @@ html[data-theme="dark"] .personal-page {
   font-size: 0.8rem;
 }
 
-.open-source-project__header > p {
+.open-source-project__header div > p span {
+  font-size: 0.92em;
+}
+
+.open-source-project__summary {
   max-width: 640px;
-  margin: 0;
   color: var(--personal-page-muted);
   line-height: 1.8;
+}
+
+.open-source-project__summary p {
+  margin: 0;
+}
+
+.open-source-project__summary .bilingual-en {
+  margin-top: 0.6rem;
+  font-size: 0.92em;
+  line-height: 1.72;
 }
 
 .open-source-project__details {
@@ -259,9 +289,24 @@ html[data-theme="dark"] .personal-page {
   font-weight: 600;
 }
 
+.open-source-project__details dt span {
+  font-size: 0.92em;
+  font-weight: 520;
+}
+
 .open-source-project__details dd {
   margin: 0;
   color: var(--personal-page-muted);
+}
+
+.open-source-project__details dd p {
+  margin: 0;
+}
+
+.open-source-project__details dd .bilingual-en {
+  margin-top: 0.4rem;
+  font-size: 0.92em;
+  line-height: 1.7;
 }
 
 .open-source-project__links {

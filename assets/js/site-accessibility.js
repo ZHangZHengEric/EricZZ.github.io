@@ -11,7 +11,9 @@
     menuButton.setAttribute("aria-expanded", String(expanded));
     menuButton.setAttribute(
       "aria-label",
-      expanded ? "关闭导航菜单" : "打开导航菜单"
+      expanded
+        ? "关闭导航菜单 / Close navigation"
+        : "打开导航菜单 / Open navigation"
     );
   }
 
@@ -21,7 +23,9 @@
     themeButton.setAttribute("aria-pressed", String(isDark));
     themeButton.setAttribute(
       "aria-label",
-      isDark ? "切换到浅色主题" : "切换到深色主题"
+      isDark
+        ? "切换到浅色主题 / Switch to light theme"
+        : "切换到深色主题 / Switch to dark theme"
     );
   }
 

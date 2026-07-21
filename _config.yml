@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "张正 Eric ZZ"
 title_separator          : "-"
 name                     : &name "张正 Eric ZZ"
-description              : &description "Sage 创建者，毕业于清华大学计算机系，当前关注 Proactive Agent 与多模态模型。"
+description              : &description "Sage 创建者，毕业于清华大学计算机系，当前关注 Proactive Agent 与多模态模型。Creator of Sage, focused on proactive agents and multimodal models."
 url                      : "https://zhangzhengeric.github.io"
 baseurl                  : "/EricZZ.github.io"
 repository               : "ZHangZHengEric/EricZZ.github.io"
@@ -24,8 +24,8 @@ author:
   # Biographic information
   avatar           : "https://avatars.githubusercontent.com/u/45086558?s=400&v=4"
   name             : "张正 Eric ZZ"
-  bio              : "Sage 创建者 · 模型与 Agent 系统构建者"
-  location         : "北京"
+  bio              : "Sage 创建者 / Creator of Sage"
+  location         : "北京 / Beijing"
   employer         :
   email            : "zhengzhang13@icloud.com"
   wechat           : "zhangzheng-thu"
@@ -36,11 +36,11 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
-    title: 'Books'
+    title: '图书 / Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: '期刊论文 / Journal Articles'
   conferences:
-    title: 'Conference Papers'
+    title: '会议论文 / Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

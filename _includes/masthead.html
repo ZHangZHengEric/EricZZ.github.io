@@ -4,11 +4,11 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button class="greedy-nav__toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">
+        <button class="greedy-nav__toggle" type="button" aria-label="打开导航菜单 / Open navigation" aria-expanded="false">
           <span class="navicon" aria-hidden="true"></span>
         </button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/" aria-label="返回张正的个人主页">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/" aria-label="返回张正的个人主页 / Eric Zhang's homepage">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -20,7 +20,7 @@
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
-      <button id="theme-toggle" class="masthead__theme-toggle" type="button" aria-label="切换到深色主题" aria-pressed="false">
+      <button id="theme-toggle" class="masthead__theme-toggle" type="button" aria-label="切换到深色主题 / Switch to dark theme" aria-pressed="false">
         <span class="masthead__theme-icon" aria-hidden="true">
           <svg class="masthead__theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
             <circle cx="12" cy="12" r="3.5"></circle>

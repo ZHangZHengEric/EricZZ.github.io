@@ -6,9 +6,9 @@ layout: default
   <article class="personal-post__inner" itemscope itemtype="https://schema.org/Article">
     <header class="personal-post__header">
       {% if page.collection == "publications" %}
-        <a class="personal-post__back" href="{{ site.baseurl }}/publications/">← 返回研究与出版</a>
+        <a class="personal-post__back" href="{{ site.baseurl }}/publications/">← 返回研究与出版 / Research &amp; Publications</a>
       {% else %}
-        <a class="personal-post__back" href="{{ site.baseurl }}/year-archive/">← 返回文章</a>
+        <a class="personal-post__back" href="{{ site.baseurl }}/year-archive/">← 返回文章 / Writing</a>
       {% endif %}
       <h1 itemprop="headline">{{ page.title }}</h1>
       {% if page.date %}
@@ -22,11 +22,11 @@ layout: default
 
     <footer class="personal-post__footer">
       {% if page.collection == "publications" %}
-        <a href="{{ site.baseurl }}/publications/">研究与出版</a>
+        <a href="{{ site.baseurl }}/publications/">研究与出版 / Research</a>
       {% else %}
-        <a href="{{ site.baseurl }}/year-archive/">全部文章</a>
+        <a href="{{ site.baseurl }}/year-archive/">全部文章 / All Posts</a>
       {% endif %}
-      <a href="{{ site.baseurl }}/">返回主页</a>
+      <a href="{{ site.baseurl }}/">返回主页 / Home</a>
     </footer>
   </article>
 </main>

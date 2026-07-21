@@ -1,5 +1,5 @@
 ---
-title: "Communication-Efficient and Personalized Federated Foundation Model Fine-Tuning via Tri-Matrix Adaptation"
+title: "基于三矩阵适配的通信高效个性化联邦基础模型微调 | Communication-Efficient and Personalized Federated Foundation Model Fine-Tuning via Tri-Matrix Adaptation"
 collection: publications
 category: conferences
 permalink: /publication/2024-01-01-communication-efficient-federated

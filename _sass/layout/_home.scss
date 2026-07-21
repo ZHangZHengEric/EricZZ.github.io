@@ -60,6 +60,16 @@ html[data-theme="dark"] .home-main {
   line-height: 1.08;
 }
 
+.personal-intro__heading-en {
+  display: block;
+  margin-top: 0.55rem;
+  color: var(--personal-muted);
+  font-size: 0.52em;
+  font-weight: 560;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
 .personal-intro__mobile-break {
   display: none;
 }
@@ -74,16 +84,40 @@ html[data-theme="dark"] .home-main {
   line-height: 1.45;
 }
 
+.personal-intro__lead > span {
+  display: block;
+}
+
+.personal-intro__lead .bilingual-en {
+  margin-top: 0.35rem;
+  color: var(--personal-muted);
+  font-size: 0.82em;
+  line-height: 1.55;
+}
+
 .personal-intro__copy {
-  max-width: 710px;
+  max-width: 900px;
   margin-top: 2.25rem;
   color: var(--personal-muted);
   font-size: clamp(1rem, 1.4vw, 1.08rem);
   line-height: 1.88;
 }
 
+.personal-intro__copy .bilingual-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-bottom: 1.4rem;
+}
+
 .personal-intro__copy p {
-  margin: 0 0 0.9rem;
+  margin: 0;
+}
+
+.personal-intro__copy .bilingual-en {
+  margin-top: 0;
+  font-size: 0.93em;
+  line-height: 1.78;
 }
 
 .personal-intro__copy strong {
@@ -150,6 +184,15 @@ html[data-theme="dark"] .home-main {
   line-height: 1.1;
 }
 
+.personal-section h2 > span {
+  margin-left: 0.45rem;
+  color: var(--personal-muted);
+  font-size: 0.52em;
+  font-weight: 560;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
 .personal-section__header > a {
   flex: 0 0 auto;
   color: var(--personal-muted);
@@ -200,11 +243,20 @@ html[data-theme="dark"] .home-main {
   text-align: right;
 }
 
-.personal-work__item > p:last-child {
-  margin: 0;
+.personal-work__description {
   color: var(--personal-muted);
   font-size: 0.98rem;
   line-height: 1.78;
+}
+
+.personal-work__description p {
+  margin: 0;
+}
+
+.personal-work__description .bilingual-en {
+  margin-top: 0.55rem;
+  font-size: 0.92em;
+  line-height: 1.72;
 }
 
 .personal-work__link {
@@ -249,6 +301,15 @@ html[data-theme="dark"] .home-main {
   line-height: 1.45;
 }
 
+.personal-work__item h3 > span {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--personal-muted);
+  font-size: 0.72em;
+  font-weight: 560;
+  line-height: 1.45;
+}
+
 .personal-reveal {
   animation: personal-reveal 520ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -285,6 +346,10 @@ html[data-theme="dark"] .home-main {
     font-size: clamp(2.1rem, 9vw, 2.35rem);
   }
 
+  .personal-intro__heading-en {
+    font-size: 0.58em;
+  }
+
   .personal-intro__mobile-break {
     display: block;
   }
@@ -296,6 +361,20 @@ html[data-theme="dark"] .home-main {
   .personal-intro__copy {
     margin-top: 2.4rem;
     line-height: 1.82;
+  }
+
+  .personal-intro__copy .bilingual-pair {
+    display: block;
+  }
+
+  .personal-intro__copy .bilingual-en {
+    margin-top: 0.55rem;
+  }
+
+  .personal-section h2 > span {
+    display: block;
+    margin: 0.3rem 0 0;
+    font-size: 0.58em;
   }
 
   .personal-writing__item {

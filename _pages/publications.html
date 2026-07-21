@@ -1,6 +1,6 @@
 ---
 layout: personal-archive
-title: "研究与出版"
+title: "研究与出版 / Research & Publications"
 permalink: /publications/
 author_profile: false
 ---
@@ -11,14 +11,14 @@ author_profile: false
     <article class="personal-record">
       <div class="personal-record__meta">
         <time datetime="{{ publication.date | date_to_xmlschema }}">{{ publication.date | date: "%Y" }}</time>
-        {% if publication.category == "books" %}<span>图书</span>{% else %}<span>论文</span>{% endif %}
+        {% if publication.category == "books" %}<span>图书 / Book</span>{% else %}<span>论文 / Paper</span>{% endif %}
       </div>
       <div class="personal-record__body">
         <h2><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></h2>
         {% if publication.venue %}<p>{{ publication.venue }}</p>{% endif %}
         <div class="personal-record__links">
-          <a href="{{ site.baseurl }}{{ publication.url }}">详情</a>
-          {% if publication.paperurl %}<a href="{{ publication.paperurl }}" target="_blank" rel="noopener noreferrer">原文 ↗</a>{% endif %}
+          <a href="{{ site.baseurl }}{{ publication.url }}">详情 / Details</a>
+          {% if publication.paperurl %}<a href="{{ publication.paperurl }}" target="_blank" rel="noopener noreferrer">原文 / Paper ↗</a>{% endif %}
         </div>
       </div>
     </article>
