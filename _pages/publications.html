@@ -1,36 +1,26 @@
 ---
-layout: archive
-title: "Publications"
+layout: personal-archive
+title: "研究与出版"
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+{% assign publications = site.publications | sort: "date" | reverse %}
+<div class="personal-records">
+  {% for publication in publications %}
+    <article class="personal-record">
+      <div class="personal-record__meta">
+        <time datetime="{{ publication.date | date_to_xmlschema }}">{{ publication.date | date: "%Y" }}</time>
+        {% if publication.category == "books" %}<span>图书</span>{% else %}<span>论文</span>{% endif %}
+      </div>
+      <div class="personal-record__body">
+        <h2><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></h2>
+        {% if publication.venue %}<p>{{ publication.venue }}</p>{% endif %}
+        <div class="personal-record__links">
+          <a href="{{ site.baseurl }}{{ publication.url }}">详情</a>
+          {% if publication.paperurl %}<a href="{{ publication.paperurl }}" target="_blank" rel="noopener noreferrer">原文 ↗</a>{% endif %}
+        </div>
+      </div>
+    </article>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+</div>

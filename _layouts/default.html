@@ -5,10 +5,10 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<html lang="{{ site.locale }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
   <head>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     {% include head.html %}
     {% include head/custom.html %}
@@ -16,6 +16,7 @@ layout: compress
 
   <body>
 
+    <a class="screen-reader-shortcut" href="{% if page.layout == 'home' or page.layout == 'personal-archive' or page.layout == 'personal-post' %}#main-content{% else %}#main{% endif %}">跳转到主要内容</a>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 

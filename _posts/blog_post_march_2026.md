@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: personal-post
 title: "AI 技术前沿：2026 年 3 月热点分析"
 date: 2026-03-06 21:00:00 +0800
 categories: AI 技术

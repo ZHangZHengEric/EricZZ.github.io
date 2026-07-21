@@ -1,0 +1,416 @@
+/* ==========================================================================
+   PERSONAL PAGES & POSTS
+   ========================================================================== */
+
+.personal-page {
+  --personal-page-ink: #0f172a;
+  --personal-page-muted: #536176;
+  --personal-page-faint: #7d899a;
+  --personal-page-line: rgba(15, 23, 42, 0.13);
+  min-height: 100vh;
+  padding: 72px 0 5rem;
+  color: var(--personal-page-ink);
+  background: #fbfcfe;
+}
+
+html[data-theme="dark"] .personal-page {
+  --personal-page-ink: #eef2f7;
+  --personal-page-muted: #aab5c6;
+  --personal-page-faint: #7f8a9b;
+  --personal-page-line: rgba(226, 232, 240, 0.14);
+  background: #090c12;
+}
+
+.personal-page__inner {
+  width: min(100% - 3rem, 980px);
+  margin-inline: auto;
+}
+
+.personal-page__header {
+  padding: 3.5rem 0 2rem;
+  border-bottom: 1px solid var(--personal-page-line);
+}
+
+.personal-page__header h1,
+.personal-post__header h1 {
+  margin: 0;
+  color: var(--personal-page-ink);
+  font-size: clamp(1.9rem, 3vw, 2.25rem);
+  font-weight: 680;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.personal-page__header p {
+  max-width: 680px;
+  margin: 1rem 0 0;
+  color: var(--personal-page-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.personal-page__content {
+  padding-top: 2.5rem;
+  color: var(--personal-page-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.personal-page__content > h2 {
+  margin: 4rem 0 1.5rem;
+  padding-bottom: 0.8rem;
+  color: var(--personal-page-ink);
+  font-size: 1.45rem;
+  font-weight: 680;
+  letter-spacing: -0.02em;
+  border-bottom: 1px solid var(--personal-page-line);
+}
+
+.personal-page__content > h2:first-child {
+  margin-top: 0;
+}
+
+.personal-page__content h3 {
+  margin: 2rem 0 0.4rem;
+  color: var(--personal-page-ink);
+  font-size: 1.08rem;
+  font-weight: 680;
+}
+
+.personal-page__content p {
+  margin: 0.55rem 0 1rem;
+}
+
+.personal-page__content ul,
+.personal-page__content ol {
+  margin: 0.75rem 0 1.5rem;
+  padding-left: 1.3rem;
+}
+
+.personal-page__content li {
+  margin: 0.35rem 0;
+}
+
+.personal-page__content code {
+  padding: 0;
+  color: var(--personal-page-faint);
+  font-family: inherit;
+  font-size: 0.8rem;
+  background: none;
+}
+
+.personal-page__content a,
+.personal-post a {
+  color: var(--personal-page-ink);
+  text-decoration-color: var(--personal-page-line);
+  text-underline-offset: 0.2em;
+}
+
+.personal-page__content a:hover,
+.personal-post a:hover {
+  color: var(--global-link-color);
+  text-decoration-color: currentColor;
+}
+
+.personal-year {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 2rem;
+  padding: 1.5rem 0 3.5rem;
+}
+
+.personal-year + .personal-year {
+  border-top: 1px solid var(--personal-page-line);
+}
+
+.personal-year > h2 {
+  margin: 0;
+  color: var(--personal-page-faint);
+  font-size: 0.92rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.personal-year__list,
+.personal-records {
+  border-top: 1px solid var(--personal-page-line);
+}
+
+.personal-year__item {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) 18px;
+  gap: 1.2rem;
+  align-items: baseline;
+  padding: 1.15rem 0;
+  color: var(--personal-page-ink);
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--personal-page-line);
+}
+
+.personal-year__item time {
+  color: var(--personal-page-faint);
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.personal-year__item h3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 580;
+  line-height: 1.5;
+}
+
+.personal-year__item > span {
+  color: var(--personal-page-faint);
+}
+
+.personal-record {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 2rem;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--personal-page-line);
+}
+
+.personal-record__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: var(--personal-page-faint);
+  font-size: 0.76rem;
+}
+
+.personal-record__body h2 {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 620;
+  line-height: 1.5;
+}
+
+.personal-record__body h2 a {
+  color: var(--personal-page-ink);
+  text-decoration: none;
+}
+
+.personal-record__body > p {
+  margin: 0.6rem 0 0;
+  color: var(--personal-page-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.personal-record__links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  font-size: 0.82rem;
+}
+
+.open-source-project {
+  scroll-margin-top: 100px;
+  border-top: 1px solid var(--personal-page-line);
+}
+
+.open-source-project__header {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--personal-page-line);
+}
+
+.open-source-project__header h2 {
+  margin: 0;
+  color: var(--personal-page-ink);
+  font-size: 1.55rem;
+  font-weight: 680;
+  letter-spacing: -0.025em;
+}
+
+.open-source-project__header div > p {
+  margin: 0.35rem 0 0;
+  color: var(--personal-page-faint);
+  font-size: 0.8rem;
+}
+
+.open-source-project__header > p {
+  max-width: 640px;
+  margin: 0;
+  color: var(--personal-page-muted);
+  line-height: 1.8;
+}
+
+.open-source-project__details {
+  margin: 0;
+}
+
+.open-source-project__details > div {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 2rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--personal-page-line);
+}
+
+.open-source-project__details dt {
+  color: var(--personal-page-faint);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.open-source-project__details dd {
+  margin: 0;
+  color: var(--personal-page-muted);
+}
+
+.open-source-project__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding-top: 1.5rem;
+  font-size: 0.88rem;
+}
+
+.open-source-project__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.open-source-project__links i {
+  width: 1em;
+  color: var(--personal-page-faint);
+  text-align: center;
+}
+
+.personal-post__inner {
+  width: min(100% - 3rem, 760px);
+  margin-inline: auto;
+}
+
+.personal-post__header {
+  padding: clamp(4.5rem, 8vw, 7rem) 0 2.5rem;
+  border-bottom: 1px solid var(--personal-page-line);
+}
+
+.personal-post__back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--personal-page-faint) !important;
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+
+.personal-post__header time {
+  display: block;
+  margin-top: 1.25rem;
+  color: var(--personal-page-faint);
+  font-size: 0.8rem;
+}
+
+.personal-post__content {
+  padding: 2.75rem 0 4rem;
+  color: var(--personal-page-muted);
+  font-size: 1.03rem;
+  line-height: 1.9;
+}
+
+.personal-post__content > h1:first-child {
+  display: none;
+}
+
+.personal-post__content h2 {
+  margin: 3.5rem 0 1.2rem;
+  color: var(--personal-page-ink);
+  font-size: 1.45rem;
+  font-weight: 680;
+  letter-spacing: -0.02em;
+}
+
+.personal-post__content h3 {
+  margin: 2.5rem 0 0.9rem;
+  color: var(--personal-page-ink);
+  font-size: 1.15rem;
+  font-weight: 680;
+}
+
+.personal-post__content p,
+.personal-post__content ul,
+.personal-post__content ol,
+.personal-post__content blockquote {
+  margin: 0 0 1.4rem;
+}
+
+.personal-post__content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2.5rem auto;
+  border-radius: 10px;
+}
+
+.personal-post__content blockquote {
+  padding: 0.1rem 0 0.1rem 1.2rem;
+  color: var(--personal-page-muted);
+  border-left: 2px solid var(--personal-page-line);
+}
+
+.personal-post__content pre {
+  margin: 2rem 0;
+  padding: 1.2rem;
+  overflow-x: auto;
+  border: 1px solid var(--personal-page-line);
+  border-radius: 10px;
+}
+
+.personal-post__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0 0;
+  font-size: 0.85rem;
+  border-top: 1px solid var(--personal-page-line);
+}
+
+@media (max-width: 760px) {
+  .personal-page {
+    padding-top: 64px;
+  }
+
+  .personal-page__inner,
+  .personal-post__inner {
+    width: min(100% - 1.75rem, 980px);
+  }
+
+  .personal-page__header,
+  .personal-post__header {
+    padding-top: 4rem;
+  }
+
+  .personal-page__header h1,
+  .personal-post__header h1 {
+    font-size: clamp(1.75rem, 8vw, 2.1rem);
+  }
+
+  .personal-year,
+  .personal-record,
+  .open-source-project__header,
+  .open-source-project__details > div {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .personal-year {
+    padding-bottom: 2.5rem;
+  }
+
+  .personal-record__meta {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  .personal-post__content {
+    font-size: 1rem;
+    line-height: 1.82;
+  }
+}

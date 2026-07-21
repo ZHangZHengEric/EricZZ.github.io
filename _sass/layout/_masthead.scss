@@ -4,30 +4,38 @@
 
 .masthead {
   position: fixed;
-  background: var(--global-bg-color);
+  top: 16px;
+  left: max(16px, calc((100vw - 1040px) / 2));
+  right: max(16px, calc((100vw - 1040px) / 2));
+  width: auto;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(22px) saturate(145%);
+  -webkit-backdrop-filter: blur(22px) saturate(145%);
   height: fit-content;
-  top: 0;
-  width: 100%;
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
-  z-index: 20;
+  z-index: 50;
+
+  html[data-theme="dark"] & {
+    background: rgba(12, 15, 22, 0.82);
+    border-color: rgba(226, 232, 240, 0.13);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  }
 
   &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    background: var(--global-border-color);
-    width: 100%;
+    display: none;
   }
 
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.5em 1em;
+    padding: 0.45rem 0.6rem;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -45,6 +53,9 @@
 }
 
 .masthead__menu {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
 
   ul {
     margin: 0;
@@ -54,14 +65,74 @@
   }
 }
 
+.masthead__theme-toggle {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--global-masthead-link-color);
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+  transition: color 180ms ease, background-color 180ms ease;
+
+  &:hover {
+    color: var(--global-link-color-hover);
+    background: var(--global-border-color);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-link-color);
+    outline-offset: 2px;
+  }
+}
+
+.masthead__theme-icon,
+.masthead__theme-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.masthead__theme-icon-moon {
+  display: none !important;
+}
+
+html[data-theme="dark"] {
+  .masthead__theme-icon-sun {
+    display: none;
+  }
+
+  .masthead__theme-icon-moon {
+    display: block !important;
+  }
+}
+
 .masthead__menu-item {
-  background-color: var(--global-bg-color);
+  background-color: transparent;
   display: block;
   list-style-type: none;
   white-space: nowrap;
 
   &--lg {
-    padding-right: 2em;
+    padding-right: clamp(0.6rem, 2vw, 2em);
     font-weight: 700;
+  }
+}
+
+@media (max-width: 600px) {
+  .masthead {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 15px;
+  }
+
+  .masthead__inner-wrap {
+    padding: 0.35rem 0.45rem;
   }
 }

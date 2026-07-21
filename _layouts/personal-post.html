@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<main class="personal-page personal-post" id="main-content">
+  <article class="personal-post__inner" itemscope itemtype="https://schema.org/Article">
+    <header class="personal-post__header">
+      {% if page.collection == "publications" %}
+        <a class="personal-post__back" href="{{ site.baseurl }}/publications/">← 返回研究与出版</a>
+      {% else %}
+        <a class="personal-post__back" href="{{ site.baseurl }}/year-archive/">← 返回文章</a>
+      {% endif %}
+      <h1 itemprop="headline">{{ page.title }}</h1>
+      {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y.%m.%d" }}</time>
+      {% endif %}
+    </header>
+
+    <section class="personal-post__content" itemprop="articleBody">
+      {{ content }}
+    </section>
+
+    <footer class="personal-post__footer">
+      {% if page.collection == "publications" %}
+        <a href="{{ site.baseurl }}/publications/">研究与出版</a>
+      {% else %}
+        <a href="{{ site.baseurl }}/year-archive/">全部文章</a>
+      {% endif %}
+      <a href="{{ site.baseurl }}/">返回主页</a>
+    </footer>
+  </article>
+</main>

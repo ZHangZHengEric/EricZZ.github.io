@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: personal-post
 title: "本周 AI 热点：大模型架构图画廊、‘无语言训练’猜想，以及 GPT‑5.4 的职业化拐点"
 date: 2026-03-16
 last_modified_at: 2026-03-17

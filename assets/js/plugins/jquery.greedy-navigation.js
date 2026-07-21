@@ -81,6 +81,10 @@ screen.orientation.addEventListener("change", function () {
 $btn.on('click', function () {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
+  var expanded = !$hlinks.hasClass('hidden');
+  $(this)
+    .attr('aria-expanded', expanded ? 'true' : 'false')
+    .attr('aria-label', expanded ? '关闭导航菜单' : '打开导航菜单');
 });
 
 updateNav();
