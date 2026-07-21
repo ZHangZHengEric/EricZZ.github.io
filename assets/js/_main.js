@@ -20,12 +20,12 @@ $(document).ready(function () {
       $("html").attr("data-theme", "dark");
       $("#theme-toggle")
         .attr("aria-pressed", "true")
-        .attr("aria-label", "切换到浅色主题 / Switch to light theme");
+        .attr("aria-label", $("html").attr("data-language") === "en" ? "Switch to light theme" : "切换到浅色主题");
     } else if (use_theme === "light") {
       $("html").removeAttr("data-theme");
       $("#theme-toggle")
         .attr("aria-pressed", "false")
-        .attr("aria-label", "切换到深色主题 / Switch to dark theme");
+        .attr("aria-label", $("html").attr("data-language") === "en" ? "Switch to dark theme" : "切换到深色主题");
     }
   };
 

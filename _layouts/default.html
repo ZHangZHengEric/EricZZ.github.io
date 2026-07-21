@@ -5,8 +5,19 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<html lang="{{ site.locale }}" class="no-js" data-language="zh"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
   <head>
+    <script>
+      (function () {
+        try {
+          var language = localStorage.getItem("language") === "en" ? "en" : "zh";
+          document.documentElement.setAttribute("data-language", language);
+          document.documentElement.setAttribute("lang", language === "en" ? "en" : "zh-CN");
+        } catch (error) {
+          document.documentElement.setAttribute("data-language", "zh");
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -16,7 +27,10 @@ layout: compress
 
   <body>
 
-    <a class="screen-reader-shortcut" href="{% if page.layout == 'home' or page.layout == 'personal-archive' or page.layout == 'personal-post' %}#main-content{% else %}#main{% endif %}">跳转到主要内容 / Skip to main content</a>
+    <a class="screen-reader-shortcut" href="{% if page.layout == 'home' or page.layout == 'personal-archive' or page.layout == 'personal-post' %}#main-content{% else %}#main{% endif %}">
+      <span data-language-content="zh">跳转到主要内容</span>
+      <span data-language-content="en" lang="en">Skip to main content</span>
+    </a>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 

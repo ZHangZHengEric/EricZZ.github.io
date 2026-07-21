@@ -6,11 +6,11 @@ layout: default
   <article class="personal-post__inner" itemscope itemtype="https://schema.org/Article">
     <header class="personal-post__header">
       {% if page.collection == "publications" %}
-        <a class="personal-post__back" href="{{ site.baseurl }}/publications/">← 返回研究与出版 / Research &amp; Publications</a>
+        <a class="personal-post__back" href="{{ site.baseurl }}/publications/"><span data-language-content="zh">← 返回研究与出版</span><span data-language-content="en" lang="en">← Research &amp; Publications</span></a>
       {% else %}
-        <a class="personal-post__back" href="{{ site.baseurl }}/year-archive/">← 返回文章 / Writing</a>
+        <a class="personal-post__back" href="{{ site.baseurl }}/year-archive/"><span data-language-content="zh">← 返回文章</span><span data-language-content="en" lang="en">← Writing</span></a>
       {% endif %}
-      <h1 itemprop="headline">{{ page.title }}</h1>
+      <h1 itemprop="headline">{% if page.title_en %}<span data-language-content="zh">{{ page.title }}</span><span data-language-content="en" lang="en">{{ page.title_en }}</span>{% else %}{{ page.title }}{% endif %}</h1>
       {% if page.date %}
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y.%m.%d" }}</time>
       {% endif %}
@@ -22,11 +22,11 @@ layout: default
 
     <footer class="personal-post__footer">
       {% if page.collection == "publications" %}
-        <a href="{{ site.baseurl }}/publications/">研究与出版 / Research</a>
+        <a href="{{ site.baseurl }}/publications/"><span data-language-content="zh">研究与出版</span><span data-language-content="en" lang="en">Research</span></a>
       {% else %}
-        <a href="{{ site.baseurl }}/year-archive/">全部文章 / All Posts</a>
+        <a href="{{ site.baseurl }}/year-archive/"><span data-language-content="zh">全部文章</span><span data-language-content="en" lang="en">All Posts</span></a>
       {% endif %}
-      <a href="{{ site.baseurl }}/">返回主页 / Home</a>
+      <a href="{{ site.baseurl }}/"><span data-language-content="zh">返回主页</span><span data-language-content="en" lang="en">Home</span></a>
     </footer>
   </article>
 </main>

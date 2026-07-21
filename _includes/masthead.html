@@ -4,33 +4,43 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button class="greedy-nav__toggle" type="button" aria-label="打开导航菜单 / Open navigation" aria-expanded="false">
+        <button class="greedy-nav__toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">
           <span class="navicon" aria-hidden="true"></span>
         </button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/" aria-label="返回张正的个人主页 / Eric Zhang's homepage">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/" aria-label="返回张正的个人主页">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item">
+              <a href="{{ domain }}{{ link.url }}">
+                <span data-language-content="zh">{{ link.title }}</span>
+                <span data-language-content="en" lang="en">{{ link.title_en | default: link.title }}</span>
+              </a>
+            </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
-      <button id="theme-toggle" class="masthead__theme-toggle" type="button" aria-label="切换到深色主题 / Switch to dark theme" aria-pressed="false">
-        <span class="masthead__theme-icon" aria-hidden="true">
-          <svg class="masthead__theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <circle cx="12" cy="12" r="3.5"></circle>
-            <path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"></path>
-          </svg>
-          <svg class="masthead__theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 15.2A8 8 0 0 1 8.8 4a8 8 0 1 0 11.2 11.2Z"></path>
-          </svg>
-        </span>
-      </button>
+      <div class="masthead__controls">
+        <button id="language-toggle" class="masthead__language-toggle" type="button" aria-label="Switch to English">
+          <span class="masthead__language-label" aria-hidden="true">EN</span>
+        </button>
+        <button id="theme-toggle" class="masthead__theme-toggle" type="button" aria-label="切换到深色主题" aria-pressed="false">
+          <span class="masthead__theme-icon" aria-hidden="true">
+            <svg class="masthead__theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <circle cx="12" cy="12" r="3.5"></circle>
+              <path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"></path>
+            </svg>
+            <svg class="masthead__theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 15.2A8 8 0 0 1 8.8 4a8 8 0 1 0 11.2 11.2Z"></path>
+            </svg>
+          </span>
+        </button>
+      </div>
     </div>
   </div>
 </div>

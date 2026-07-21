@@ -65,7 +65,15 @@
   }
 }
 
-.masthead__theme-toggle {
+.masthead__controls {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.masthead__theme-toggle,
+.masthead__language-toggle {
   display: inline-flex;
   width: 42px;
   height: 42px;
@@ -89,6 +97,13 @@
     outline: 2px solid var(--global-link-color);
     outline-offset: 2px;
   }
+}
+
+.masthead__language-toggle {
+  font-family: $sans-serif-narrow;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
 }
 
 .masthead__theme-icon,

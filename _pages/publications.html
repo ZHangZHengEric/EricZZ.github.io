@@ -1,6 +1,7 @@
 ---
 layout: personal-archive
-title: "研究与出版 / Research & Publications"
+title: "研究与出版"
+title_en: "Research & Publications"
 permalink: /publications/
 author_profile: false
 ---
@@ -11,14 +12,14 @@ author_profile: false
     <article class="personal-record">
       <div class="personal-record__meta">
         <time datetime="{{ publication.date | date_to_xmlschema }}">{{ publication.date | date: "%Y" }}</time>
-        {% if publication.category == "books" %}<span>图书 / Book</span>{% else %}<span>论文 / Paper</span>{% endif %}
+        {% if publication.category == "books" %}<span><span data-language-content="zh">图书</span><span data-language-content="en" lang="en">Book</span></span>{% else %}<span><span data-language-content="zh">论文</span><span data-language-content="en" lang="en">Paper</span></span>{% endif %}
       </div>
       <div class="personal-record__body">
-        <h2><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></h2>
-        {% if publication.venue %}<p>{{ publication.venue }}</p>{% endif %}
+        <h2><a href="{{ site.baseurl }}{{ publication.url }}">{% if publication.title_en %}<span data-language-content="zh">{{ publication.title }}</span><span data-language-content="en" lang="en">{{ publication.title_en }}</span>{% else %}{{ publication.title }}{% endif %}</a></h2>
+        {% if publication.venue %}<p>{% if publication.venue_en %}<span data-language-content="zh">{{ publication.venue }}</span><span data-language-content="en" lang="en">{{ publication.venue_en }}</span>{% else %}{{ publication.venue }}{% endif %}</p>{% endif %}
         <div class="personal-record__links">
-          <a href="{{ site.baseurl }}{{ publication.url }}">详情 / Details</a>
-          {% if publication.paperurl %}<a href="{{ publication.paperurl }}" target="_blank" rel="noopener noreferrer">原文 / Paper ↗</a>{% endif %}
+          <a href="{{ site.baseurl }}{{ publication.url }}"><span data-language-content="zh">详情</span><span data-language-content="en" lang="en">Details</span></a>
+          {% if publication.paperurl %}<a href="{{ publication.paperurl }}" target="_blank" rel="noopener noreferrer"><span data-language-content="zh">原文 ↗</span><span data-language-content="en" lang="en">Paper ↗</span></a>{% endif %}
         </div>
       </div>
     </article>

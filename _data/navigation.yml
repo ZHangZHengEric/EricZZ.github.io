@@ -8,14 +8,18 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "开源 / Open Source"
+  - title: "开源"
+    title_en: "Open Source"
     url: /open-source/
 
-  - title: "研究 / Research"
+  - title: "研究"
+    title_en: "Research"
     url: /publications/
 
-  - title: "文章 / Writing"
+  - title: "文章"
+    title_en: "Writing"
     url: /year-archive/
 
-  - title: "经历 / CV"
+  - title: "经历"
+    title_en: "CV"
     url: /cv/

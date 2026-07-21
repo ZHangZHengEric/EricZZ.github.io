@@ -13,6 +13,17 @@
   visibility: hidden;
 }
 
+/* site language visibility */
+
+[data-language-content] {
+  display: none !important;
+}
+
+html[data-language="zh"] [data-language-content="zh"],
+html[data-language="en"] [data-language-content="en"] {
+  display: revert !important;
+}
+
 /* for preloading images */
 
 .load {

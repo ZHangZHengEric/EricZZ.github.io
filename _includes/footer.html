@@ -5,8 +5,8 @@
     {% if site.author.github %}
       <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
-      <li><a href="{{ site.baseurl }}/open-source/"><i class="fas fa-code-branch" aria-hidden="true"></i> Sage 开源 / Open Source</a></li>
-    <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> 联系 / Email</a></li>
+      <li><a href="{{ site.baseurl }}/open-source/"><i class="fas fa-code-branch" aria-hidden="true"></i> <span data-language-content="zh">Sage 开源</span><span data-language-content="en" lang="en">Open Source</span></a></li>
+    <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> <span data-language-content="zh">联系</span><span data-language-content="en" lang="en">Email</span></a></li>
     {% if site.atom_feed.hide != true %}
     <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> RSS</a></li>
     {% endif %}

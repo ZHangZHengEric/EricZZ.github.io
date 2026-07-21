@@ -24,8 +24,10 @@ author:
   # Biographic information
   avatar           : "https://avatars.githubusercontent.com/u/45086558?s=400&v=4"
   name             : "张正 Eric ZZ"
-  bio              : "Sage 创建者 / Creator of Sage"
-  location         : "北京 / Beijing"
+  bio              : "Sage 创建者"
+  bio_en           : "Creator of Sage"
+  location         : "北京"
+  location_en      : "Beijing"
   employer         :
   email            : "zhengzhang13@icloud.com"
   wechat           : "zhangzheng-thu"
@@ -36,11 +38,14 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
-    title: '图书 / Books'
+    title: '图书'
+    title_en: 'Books'
   manuscripts:
-    title: '期刊论文 / Journal Articles'
+    title: '期刊论文'
+    title_en: 'Journal Articles'
   conferences:
-    title: '会议论文 / Conference Papers'
+    title: '会议论文'
+    title_en: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

@@ -7,7 +7,7 @@ author_profile: false
   {% include sidebar.html %}
 
   <div class="archive">
-    <h1 class="page__title">{{ page.title }}</h1>
+    <h1 class="page__title">{% if page.title_en %}<span data-language-content="zh">{{ page.title }}</span><span data-language-content="en" lang="en">{{ page.title_en }}</span>{% else %}{{ page.title }}{% endif %}</h1>
     {% include base_path %}
     {% for post in page.posts %}
       {% include archive-single.html %}
