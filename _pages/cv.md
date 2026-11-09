@@ -33,6 +33,7 @@ redirect_from:
 <article class="cv-experience"><p class="cv-date"><span data-language-content="zh">2025.07 — 2026.04</span><span data-language-content="en" lang="en">2025.07 — Apr 2026</span></p><h3><span data-language-content="zh">循环智能 · Agent 技术负责人</span><span data-language-content="en" lang="en">Recurrent AI · Agent Technology Lead</span></h3><ul class="cv-contributions">
   <li><span data-language-content="zh">负责 Agent 系统与 ASR（自动语音识别）模型研发。</span><span data-language-content="en" lang="en">Responsible for agent systems and automatic speech recognition (ASR) model development.</span></li>
   <li><span data-language-content="zh">交付多个面向销售与客户分析的 Agent 产品。</span><span data-language-content="en" lang="en">Delivered multiple agent products for sales and customer analytics.</span></li>
+  <li><span data-language-content="zh">开发 Voice Agent，实现稳定的端到端 2 秒响应。</span><span data-language-content="en" lang="en">Developed a voice agent with stable two-second end-to-end response latency.</span></li>
   <li><span data-language-content="zh">推动 ASR 模型在业务产线上应用，降低成本，识别效果达到 SOTA 水平，并解决多项说话人识别问题。</span><span data-language-content="en" lang="en">Deployed ASR models in production to reduce costs and achieve state-of-the-art recognition performance, while addressing multiple speaker identification challenges.</span></li>
 </ul></article>
 
