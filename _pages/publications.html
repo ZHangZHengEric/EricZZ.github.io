@@ -16,6 +16,7 @@ author_profile: false
       </div>
       <div class="personal-record__body">
         <h2><a href="{{ site.baseurl }}{{ publication.url }}">{% if publication.title_en %}<span data-language-content="zh">{{ publication.title }}</span><span data-language-content="en" lang="en">{{ publication.title_en }}</span>{% else %}{{ publication.title }}{% endif %}</a></h2>
+        {% if publication.authors_html %}<p class="selected-publication__authors">{{ publication.authors_html }}</p>{% endif %}
         {% if publication.venue %}<p>{% if publication.venue_en %}<span data-language-content="zh">{{ publication.venue }}</span><span data-language-content="en" lang="en">{{ publication.venue_en }}</span>{% else %}{{ publication.venue }}{% endif %}</p>{% endif %}
         <div class="personal-record__links">
           <a href="{{ site.baseurl }}{{ publication.url }}"><span data-language-content="zh">详情</span><span data-language-content="en" lang="en">Details</span></a>

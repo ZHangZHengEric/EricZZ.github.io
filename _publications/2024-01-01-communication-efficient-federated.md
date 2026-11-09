@@ -2,13 +2,20 @@
 title: "基于三矩阵适配的通信高效个性化联邦基础模型微调"
 title_en: "Communication-Efficient and Personalized Federated Foundation Model Fine-Tuning via Tri-Matrix Adaptation"
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/2024-01-01-communication-efficient-federated/
 excerpt: 'Efficient federated learning for large language models | 大语言模型的高效联邦学习'
 date: 2025-03-01
 venue: 'IEEE Transactions on Multimedia (Regular Paper)'
 paperurl: 'https://arxiv.org/abs/2503.23869'
-citation: 'Yongle Li, Bo Liu, Sheng Huang, Zheng Zhang, Xiaotong Yuan, Richang Hong. (2024). "Communication-Efficient and Personalized Federated Foundation Model Fine-Tuning via Tri-Matrix Adaptation"'
+citation: 'Yongle Li, Bo Liu, Sheng Huang, Zheng Zhang, Xiaotong Yuan, Richang Hong. (2025). "Communication-Efficient and Personalized Federated Foundation Model Fine-Tuning via Tri-Matrix Adaptation"'
+selected_order: 0
+venue_short: "IEEE TMM · 2025"
+authors_html: "Yongle Li, Bo Liu, Sheng Huang, <strong>Zheng Zhang</strong>, Xiaotong Yuan, Richang Hong"
+summary: "提出 CE-LoRA，通过三矩阵低秩适配与个性化参数聚合，研究联邦基础模型微调中的通信效率与数据异质性问题。"
+summary_en: "CE-LoRA combines tri-matrix low-rank adaptation with personalized parameter aggregation to address communication efficiency and data heterogeneity in federated foundation-model fine-tuning."
+source_url: "https://arxiv.org/abs/2503.23869"
+
 ---
 
 <div data-language-content="zh" markdown="1">

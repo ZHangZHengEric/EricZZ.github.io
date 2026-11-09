@@ -1,0 +1,58 @@
+/* Plain project and publication notes, shared by home and research pages. */
+.sage-feature { max-width: 800px; }
+.sage-feature h2 { margin: 0 0 0.5rem; color: var(--personal-ink, var(--personal-page-ink)); font-size: 1.55rem; line-height: 1.4; }
+.sage-feature > p { color: var(--personal-muted, var(--personal-page-muted)); font-size: 0.96rem; line-height: 1.85; margin: 0.9rem 0; }
+.sage-feature .sage-subtitle { font-size: 0.8rem; margin: 0 0 1.5rem; }
+.sage-feature a { color: var(--personal-ink, var(--personal-page-ink)); text-underline-offset: 4px; }
+.feature-eyebrow { color: var(--personal-page-muted); font-size: 0.78rem; }
+.selected-publication { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 2rem; padding: 2rem 0; border-top: 1px solid var(--personal-line); }
+.selected-publication:last-child { border-bottom: 1px solid var(--personal-line); }
+.selected-publication__meta { display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.75rem; line-height: 1.6; color: var(--personal-muted); }
+.selected-publication__meta > span:first-child { font-weight: 500; color: var(--personal-muted); }
+.selected-publication__body h3 { margin: 0; font-size: 1.02rem; line-height: 1.65; }
+.selected-publication__body h3 a { color: var(--personal-ink); text-decoration: none; }
+.selected-publication__authors { margin: 0.7rem 0; font-size: 0.77rem !important; line-height: 1.7; color: var(--personal-muted, var(--personal-page-muted)); }
+.selected-publication__authors strong { color: var(--personal-ink, var(--personal-page-ink)); }
+.selected-publication__summary { color: var(--personal-muted); font-size: 0.92rem; line-height: 1.8; margin: 0.7rem 0; }
+.selected-publication__links { display: flex; gap: 1.5rem; font-size: 0.8rem; }
+.selected-publication__links a { color: var(--personal-accent); text-underline-offset: 4px; }
+.sage-detail-nav, .sage-resource-links { display: flex; flex-wrap: wrap; gap: 1rem 1.8rem; margin: 1.5rem 0; font-size: 0.82rem; }
+.sage-detail-section { padding-top: 2rem; margin-top: 2.5rem; border-top: 1px solid var(--personal-page-line); scroll-margin-top: 110px; }
+.sage-detail-section > h2 { margin: 0 0 1.5rem; color: var(--personal-page-ink); font-size: 1.6rem; letter-spacing: -0.03em; }
+.contribution-list { margin: 2rem 0; }
+.contribution-list > div { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 2rem; padding: 1.5rem 0; border-top: 1px solid var(--personal-page-line); }
+.contribution-list dt { font-size: 0.87rem; font-weight: 650; color: var(--personal-page-ink); }
+.contribution-list dd { margin: 0; }
+.contribution-list dd p { margin: 0; }
+.experiment-table-wrap { max-width: 100%; overflow-x: auto; margin: 2rem 0; }
+.experiment-table { width: 100%; margin: 0; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+.experiment-table caption { text-align: left; padding-bottom: 0.8rem; font-size: 0.8rem; color: var(--personal-page-muted); }
+.experiment-table th, .experiment-table td { padding: 1rem; border-bottom: 1px solid var(--personal-page-line); }
+.experiment-table thead th { color: var(--personal-page-ink); background: rgba(75, 125, 100, 0.09); }
+.experiment-table td:last-child { color: var(--personal-page-ink); font-weight: 700; }
+.experiment-note { border-left: 3px solid #78998c; padding: 0.2rem 1.5rem; margin-top: 2rem; background: rgba(75, 125, 100, 0.05); }
+.experiment-note h3 { margin-top: 0.7rem; }
+.experiment-note p { font-size: 0.85rem; }
+.cv-contributions li { padding-bottom: 0.25rem; }
+@media (max-width: 760px) {
+  .selected-publication, .contribution-list > div { grid-template-columns: 1fr; gap: 0.8rem; }
+  .selected-publication__meta { flex-direction: row; flex-wrap: wrap; gap: 0.6rem 1.2rem; }
+  .experiment-table th, .experiment-table td { padding: 0.65rem 0.4rem; font-size: 0.8rem; }
+}
+@media print { .sage-feature { background: white; color: black; } .sage-detail-section { break-inside: auto; } }
+.home-main .personal-section[id] { scroll-margin-top: 100px; }
+
+/* Keep the profile close to a conventional academic homepage. */
+.personal-intro__inner { border-left: 0; padding-left: 0; max-width: 980px; }
+.personal-intro h1 { font-size: clamp(2.1rem, 4vw, 2.8rem); }
+.personal-intro { padding: 3.5rem 0; }
+.personal-intro__copy { font-size: 1rem; }
+.personal-links .resume-primary { padding: 0; border-radius: 0; background: transparent; color: var(--personal-ink); }
+.personal-section { padding: 3rem 0; }
+.personal-section h2 { font-size: 1.5rem; }
+.personal-work__item--featured { background: transparent; border-left: 0; padding: 2.2rem 0; }
+.cv-profile { background: transparent; border-left: 0; padding: 0; }
+.cv-experience { border-left: 1px solid var(--personal-page-line); }
+.sage-questions .research-grid { display: block; }
+.sage-questions .research-topic { border: 0; padding: 0; margin: 1.5rem 0; }
+.sage-questions .research-topic__number { display: none; }

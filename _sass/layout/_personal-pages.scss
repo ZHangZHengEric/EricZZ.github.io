@@ -453,3 +453,32 @@ html[data-theme="dark"] .personal-page {
     line-height: 1.82;
   }
 }
+
+.cv-profile { padding: 2rem; background: rgba(36, 87, 214, 0.045); border-left: 3px solid #2457d6; }
+.cv-profile__eyebrow { font-size: 0.8rem; letter-spacing: 0.04em; color: var(--personal-page-muted); }
+.cv-profile h2 { margin: 0.8rem 0 1.2rem; color: var(--personal-page-ink); font-size: 1.5rem; }
+.cv-profile strong { color: var(--personal-page-ink); }
+.cv-contact { display: flex; flex-wrap: wrap; gap: 0.8rem 1.4rem; align-items: center; margin-top: 1.5rem; font-size: 0.85rem; overflow-wrap: anywhere; }
+.cv-print { border: 1px solid var(--personal-page-line); border-radius: 4px; padding: 0.5rem 0.8rem; color: var(--personal-page-ink); background: transparent; cursor: pointer; font: inherit; }
+.cv-print:hover { border-color: currentColor; }
+.cv-experience { margin: 1.6rem 0; padding: 0.4rem 0 0.4rem 1.5rem; border-left: 2px solid #2457d6; }
+.cv-experience h3 { margin-top: 0.3rem; }
+.cv-date { font-size: 0.8rem; font-variant-numeric: tabular-nums; color: var(--personal-page-muted); }
+@media (max-width: 760px) { .cv-profile { padding: 1.25rem; } }
+@media print {
+  @page { size: A4; margin: 16mm; }
+  body { margin: 0 !important; padding: 0 !important; background: white !important; }
+  .masthead, .page__footer, .cv-print, .screen-reader-shortcut { display: none !important; }
+  .personal-page { padding: 0; min-height: 0; background: white !important; --personal-page-ink: #111; --personal-page-muted: #333; --personal-page-faint: #555; --personal-page-line: #ccc; }
+  .personal-page__inner { width: 100%; }
+  .personal-page__header { padding: 0 0 0.8rem; }
+  .personal-page__header h1 { font-size: 22pt; }
+  .personal-page__content { padding-top: 1rem; font-size: 10pt; line-height: 1.55; }
+  .personal-page__content > h2 { margin: 1.5rem 0 0.6rem; font-size: 14pt; break-after: avoid; }
+  .personal-page__content h3 { break-after: avoid; font-size: 11pt; }
+  .cv-profile { padding: 1rem; }
+  .cv-experience, .research-topic { break-inside: avoid; }
+  .research-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .research-topic p { font-size: 9pt; }
+  a { text-decoration: none !important; }
+}

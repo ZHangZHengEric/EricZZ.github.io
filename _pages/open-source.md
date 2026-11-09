@@ -1,49 +1,17 @@
 ---
 layout: personal-archive
-title: "开源作品"
-title_en: "Open Source"
+title: "Sage"
+title_en: "Sage"
+description: "开源 Agent 项目 · 递归自我改进（RSI）"
+description_en: "An open-source agent project · Recursive Self-Improvement (RSI)"
 permalink: /open-source/
 author_profile: false
 ---
 
-<article class="open-source-project" id="sage" aria-labelledby="sage-title">
-  <header class="open-source-project__header">
-    <div>
-      <h2 id="sage-title">Sage</h2>
-      <p><span data-language-content="zh">创建者、主要维护者</span><span data-language-content="en" lang="en">Creator &amp; Lead Maintainer</span></p>
-    </div>
-    <div class="open-source-project__summary">
-      <p data-language-content="zh">Sage 是我从零创建并持续维护的开源 Agent 系统。它关注的不只是模型如何回答问题，也关注复杂任务如何被规划、执行、检查并形成可用结果。</p>
-      <p data-language-content="en" lang="en">Sage is an open-source agent system that I created from the ground up and continue to maintain. It focuses not only on how models answer questions, but also on how complex tasks are planned, executed, checked, and turned into useful results.</p>
-    </div>
-  </header>
-
-  <dl class="open-source-project__details">
-    <div>
-      <dt><span data-language-content="zh">项目方向</span><span data-language-content="en" lang="en">Focus</span></dt>
-      <dd>
-        <p data-language-content="zh">Agent 运行时、任务规划、工具与技能系统、上下文和记忆、沙箱执行及自动化。</p>
-        <p data-language-content="en" lang="en">Agent runtime, task planning, tools and skills, context and memory, sandboxed execution, and automation.</p>
-      </dd>
-    </div>
-    <div>
-      <dt><span data-language-content="zh">我的工作</span><span data-language-content="en" lang="en">My Role</span></dt>
-      <dd>
-        <p data-language-content="zh">负责项目的整体设计，持续推进核心架构、运行时能力、桌面与 Web 产品以及开源协作。</p>
-        <p data-language-content="en" lang="en">Responsible for the overall design of Sage, including its core architecture, runtime capabilities, desktop and web products, and open-source collaboration.</p>
-      </dd>
-    </div>
-    <div>
-      <dt><span data-language-content="zh">项目形态</span><span data-language-content="en" lang="en">Surfaces</span></dt>
-      <dd>
-        <p data-language-content="zh">目前覆盖桌面端、Web、CLI 和浏览器扩展，并支持通过 Skills 与 MCP 扩展能力。</p>
-        <p data-language-content="en" lang="en">Available across desktop, web, CLI, and browser extensions, with extensibility through Skills and MCP.</p>
-      </dd>
-    </div>
-  </dl>
-
-  <nav class="open-source-project__links" aria-label="Sage 项目链接 / Project links">
-    <a href="https://github.com/ZHangZHengEric/Sage" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span data-language-content="zh">GitHub 仓库</span><span data-language-content="en" lang="en">GitHub Repository</span> <span aria-hidden="true">↗</span></a>
-    <a href="https://wiki.sage.zavixai.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-book-open" aria-hidden="true"></i><span data-language-content="zh">项目文档</span><span data-language-content="en" lang="en">Documentation</span> <span aria-hidden="true">↗</span></a>
-  </nav>
-</article>
+{% include sage-feature.html %}
+<nav class="sage-detail-nav" aria-label="Sage sections">
+<a href="#sage-contribution"><span data-language-content="zh">系统实现</span><span data-language-content="en" lang="en">Implementation</span></a><a href="#sage-evidence"><span data-language-content="zh">实验记录</span><span data-language-content="en" lang="en">Experiments</span></a><a href="#sage-questions"><span data-language-content="zh">开放问题</span><span data-language-content="en" lang="en">Open questions</span></a></nav><section class="sage-detail-section" id="sage-contribution"><h2><span data-language-content="zh">系统实现</span><span data-language-content="en" lang="en">Implementation</span></h2><p data-language-content="zh">我负责 Sage 的架构设计与主要维护工作。当前实现包括 Agent 运行时、RSI 优化流程，以及 Desktop、Server 和 Python SDK。</p><p data-language-content="en" lang="en">I am responsible for Sage’s architecture and ongoing maintenance. The implementation includes an agent runtime, an RSI optimization loop, and Desktop, Server, and Python SDK interfaces.</p><dl class="contribution-list"><div><dt><span data-language-content="zh">系统架构</span><span data-language-content="en" lang="en">System architecture</span></dt><dd><p data-language-content="zh">围绕 Agent Package、Session 与 Run 组织能力、对话与执行状态；让模型、工具、记忆与宿主执行能力可以组合。</p><p data-language-content="en" lang="en">Organize capabilities, conversation, and execution state around Agent Package, Session, and Run, with composable models, tools, memory, and host execution.</p></dd></div><div><dt><span data-language-content="zh">RSI 实验机制</span><span data-language-content="en" lang="en">RSI experimentation</span></dt><dd><p data-language-content="zh">在现有模型上优化 Agent 指令与技能；区分训练反馈、验证选版与独立测试观察，保留候选版本、执行证据和变更记录。</p><p data-language-content="en" lang="en">Optimize agent instructions and skills using existing models. Separate training feedback, validation selection, and independent test observation, retaining candidate versions, evidence, and changes.</p></dd></div><div><dt><span data-language-content="zh">产品与开源</span><span data-language-content="en" lang="en">Product & open source</span></dt><dd><p data-language-content="zh">将运行时连接到 Desktop、Server / Agent Studio 与 Python SDK，让系统设计能够在实际任务中被使用、检查与迭代。</p><p data-language-content="en" lang="en">Connect the runtime to Desktop, Server / Agent Studio, and the Python SDK so that system designs can be used, inspected, and refined in actual tasks.</p></dd></div></dl><div class="sage-resource-links"><a href="https://github.com/ZHangZHengEric/Sage" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/ZHangZHengEric/Sage/blob/main/sagents/v2/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer"><span data-language-content="zh">运行时架构</span><span data-language-content="en" lang="en">Runtime architecture</span> ↗</a><a href="https://github.com/ZHangZHengEric/Sage/blob/main/docs/zh/applications/RSI.md" target="_blank" rel="noopener noreferrer"><span data-language-content="zh">RSI 实现文档</span><span data-language-content="en" lang="en">RSI implementation</span> ↗</a></div></section><section class="sage-detail-section" id="sage-evidence"><p class="feature-eyebrow">EXPERIMENT / τ²-BENCH RETAIL</p><h2><span data-language-content="zh">初步实验</span><span data-language-content="en" lang="en">Preliminary experiments</span></h2><p data-language-content="zh">公开实验记录：τ²-bench v1.0.1 的 retail 测试子集，40 个任务、每题重复 4 次。默认版本与冻结候选各执行 160 次，共 320 次测量。候选依据 train/dev 选定，独立 test 不参与选版。</p><p data-language-content="en" lang="en">Public experiment record: 40 tasks from the τ²-bench v1.0.1 retail test subset, with four trials per task. The baseline and frozen candidate each ran 160 episodes, for 320 measurements in total. Candidate selection used train/dev; independent test results were excluded from selection.</p>{% assign experiment = site.data.sage_experiment %}
+<div class="experiment-table-wrap"><table class="experiment-table"><caption><span data-language-content="zh">默认版本与冻结候选的探索性对比</span><span data-language-content="en" lang="en">Exploratory comparison of baseline and frozen candidate</span></caption><thead><tr><th scope="col"><span data-language-content="zh">指标</span><span data-language-content="en" lang="en">Metric</span></th><th scope="col"><span data-language-content="zh">默认版本</span><span data-language-content="en" lang="en">Baseline</span></th><th scope="col"><span data-language-content="zh">RSI 候选</span><span data-language-content="en" lang="en">RSI candidate</span></th></tr></thead><tbody>
+<tr><th scope="row"><span data-language-content="zh">任务成功率 · pass¹</span><span data-language-content="en" lang="en">Task success · pass¹</span></th><td>{{ experiment.summary.test-baseline.pass1 | times: 100 | round: 3 }}%</td><td>{{ experiment.summary.test-candidate.pass1 | times: 100 | round: 3 }}%</td></tr>
+<tr><th scope="row"><span data-language-content="zh">四次全成功率 · pass⁴</span><span data-language-content="en" lang="en">All four trials successful · pass⁴</span></th><td>{{ experiment.summary.test-baseline.pass4 | times: 100 | round: 2 }}%</td><td>{{ experiment.summary.test-candidate.pass4 | times: 100 | round: 2 }}%</td></tr>
+</tbody></table></div><p data-language-content="zh">目标模型：gpt-5.6-luna；调优、用户模拟与自然语言判分：gpt-6.1-sol。配对测量中，28 次由失败变成功，15 次由成功变失败，均计入结果。</p><p data-language-content="en" lang="en">Target model: gpt-5.6-luna. Tuning, user simulation, and natural-language judging used gpt-6.1-sol. Paired measurements include 28 failures becoming successes and 15 successes becoming failures.</p><div class="experiment-note"><h3><span data-language-content="zh">实验限制</span><span data-language-content="en" lang="en">Limitations</span></h3><p data-language-content="zh">这是本地探索性测量，不是官方榜单成绩。实验使用更强模型辅助调优，不能视作等算力或纯同模型自我改进；开发期间经历过执行传输修复，因果归因有限。候选尚未达到实验内部的稳定成功目标（goal_verified=false），有限样本中的增益也不能直接代表跨任务泛化。</p><p data-language-content="en" lang="en">This is a local exploratory measurement, not an official leaderboard result. Tuning used a stronger model, so the result is neither an equal-compute comparison nor pure same-model self-improvement. A transport repair during development limits causal attribution. The candidate did not meet the internal stable-success target (goal_verified=false), and gains on a finite subset do not establish cross-task generalization.</p></div><div class="sage-resource-links"><a href="https://github.com/ZHangZHengEric/Sage/blob/main/docs/zh/applications/TAU_BENCH.md" target="_blank" rel="noopener noreferrer"><span data-language-content="zh">实验说明</span><span data-language-content="en" lang="en">Experiment protocol</span> ↗</a><a href="{{ experiment.source }}" target="_blank" rel="noopener noreferrer"><span data-language-content="zh">逐次测量与原始记录</span><span data-language-content="en" lang="en">Measurements &amp; evidence</span> ↗</a></div></section><section class="sage-detail-section sage-questions" id="sage-questions"><h2><span data-language-content="zh">正在探索的研究问题</span><span data-language-content="en" lang="en">Open research questions</span></h2><div class="research-grid"><article class="research-topic"><span class="research-topic__number">01</span><h3><span data-language-content="zh">改进能否迁移？</span><span data-language-content="en" lang="en">Does improvement transfer?</span></h3><p data-language-content="zh">在当前任务上的增益，能否迁移到未见任务与不同模型？如何区分可复用策略与对题集的适应？</p><p data-language-content="en" lang="en">Do gains transfer to unseen tasks and different models? How can reusable strategies be distinguished from adaptation to a task set?</p></article><article class="research-topic"><span class="research-topic__number">02</span><h3><span data-language-content="zh">如何识别真实增益？</span><span data-language-content="en" lang="en">Is the gain reliable?</span></h3><p data-language-content="zh">面对执行波动与评测噪声，如何用重复测量、独立测试与退化分析判断改进是否稳定？</p><p data-language-content="en" lang="en">How can repeated measurements, independent tests, and regression analysis distinguish stable gains from execution and evaluation noise?</p></article><article class="research-topic"><span class="research-topic__number">03</span><h3><span data-language-content="zh">改进的边界在哪里？</span><span data-language-content="en" lang="en">What should change?</span></h3><p data-language-content="zh">如何约束可修改范围，在持续改进能力的同时保持原始职责与权限边界？</p><p data-language-content="en" lang="en">How should the editable scope be constrained so that improvement preserves original responsibilities and permission boundaries?</p></article></div></section>

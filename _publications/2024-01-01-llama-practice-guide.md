@@ -10,6 +10,13 @@ venue: '电子工业出版社'
 venue_en: 'Publishing House of Electronics Industry'
 paperurl: 'https://www.phei.com.cn/module/wap/sbookcd.jsp?goodid=64214'
 citation: '张俊祺、曲东奇、张正、占冰强. (2024). "Llama 大模型实践指南" <i>电子工业出版社</i>.'
+selected_order: 3
+venue_short: "2024 · 电子工业出版社"
+authors_html: "张俊祺、曲东奇、<strong>张正</strong>、占冰强"
+summary: "参与撰写中文预训练策略与 LoRA 高效微调章节，将 Atom 系列模型研发中的实践整理为系统方法。"
+summary_en: "Co-authored chapters on Chinese pretraining and LoRA fine-tuning, drawing on experience developing the Atom model series."
+source_url: "https://www.phei.com.cn/module/wap/sbookcd.jsp?goodid=64214"
+
 ---
 
 <div data-language-content="zh" markdown="1">

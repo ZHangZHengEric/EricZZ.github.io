@@ -57,6 +57,11 @@
       // The preference is optional when storage is unavailable.
     }
     syncLanguageState();
+    // Re-measure translated labels before deciding which links fit in the masthead.
+    window.requestAnimationFrame(function () {
+      window.dispatchEvent(new Event("resize"));
+      syncMenuState();
+    });
   }
 
   if (menuButton) {

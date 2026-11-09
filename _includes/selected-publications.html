@@ -1,0 +1,17 @@
+{% assign selected = site.publications | where_exp: "item", "item.selected_order != nil" | sort: "selected_order" %}
+<div class="selected-publications">
+{% for publication in selected %}
+  <article class="selected-publication">
+    <div class="selected-publication__meta">
+      <span>{{ publication.venue_short }}</span>
+      <span>{% if publication.category == "books" %}<span data-language-content="zh">合著图书</span><span data-language-content="en" lang="en">Co-authored book</span>{% else %}<span data-language-content="zh">共同作者</span><span data-language-content="en" lang="en">Co-author</span>{% endif %}</span>
+    </div>
+    <div class="selected-publication__body">
+      <h3><a href="{{ site.baseurl }}{{ publication.url }}"><span data-language-content="zh">{{ publication.title }}</span><span data-language-content="en" lang="en">{{ publication.title_en }}</span></a></h3>
+      <p class="selected-publication__authors">{{ publication.authors_html }}</p>
+      <p class="selected-publication__summary"><span data-language-content="zh">{{ publication.summary }}</span><span data-language-content="en" lang="en">{{ publication.summary_en }}</span></p>
+      <div class="selected-publication__links"><a href="{{ site.baseurl }}{{ publication.url }}"><span data-language-content="zh">研究详情</span><span data-language-content="en" lang="en">Details</span></a><a href="{{ publication.source_url }}" target="_blank" rel="noopener noreferrer"><span data-language-content="zh">{% if publication.category == "books" %}出版社{% else %}论文原文{% endif %}</span><span data-language-content="en" lang="en">{% if publication.category == "books" %}Publisher{% else %}Paper{% endif %}</span> ↗</a></div>
+    </div>
+  </article>
+{% endfor %}
+</div>

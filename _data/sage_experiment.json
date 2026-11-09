@@ -1,0 +1,53 @@
+{
+  "experiment": "tau-retail-rsi-selection-feedback",
+  "benchmark": {
+    "repository": "sierra-research/tau2-bench",
+    "version": "v1.0.1",
+    "commit": "fc0055dc4e0a316c3f83133267fbd6faaa770992",
+    "domain": "retail",
+    "split": "test"
+  },
+  "target_model": "gpt-5.6-luna",
+  "tuner_user_and_judge_model": "gpt-6.1-sol",
+  "summary": {
+    "test-baseline": {
+      "episodes": 160,
+      "tasks": 40,
+      "trials_per_task": 4,
+      "successes": 120.0,
+      "pass1": 0.75,
+      "all_trials_successful": 23,
+      "pass4": 0.575
+    },
+    "test-candidate": {
+      "episodes": 160,
+      "tasks": 40,
+      "trials_per_task": 4,
+      "successes": 133.0,
+      "pass1": 0.83125,
+      "all_trials_successful": 26,
+      "pass4": 0.65
+    }
+  },
+  "paired_outcomes": {
+    "improved": 28,
+    "regressed": 15,
+    "both_succeeded": 105,
+    "both_failed": 12
+  },
+  "limitations": [
+    "Exploratory local retail test subset; not an official leaderboard submission.",
+    "Stronger-model-assisted tuning; not equal-compute or pure same-model self-improvement.",
+    "Development resumed across an explicitly recorded transport repair; causal attribution is limited.",
+    "Finite samples and model variance; paired regressions remain included.",
+    "goal_verified=false: the retained candidate did not meet the internal stable-success target."
+  ],
+  "frozen": {
+    "baseline": "5b3bff4f374e77e5cd4b12e3b61c65e75ea7ed63bab05758222182bd4f771cc5",
+    "candidate": "14885dd37fa4d902249cb2bbd0debe4ad402ef14b85e8603eae794c3ff5a1de9",
+    "goal_verified": false,
+    "selection_rule": "last accepted development candidate; human-only checkpoints excluded; frozen before repeated final measurement"
+  },
+  "source": "https://github.com/ZHangZHengEric/Sage/blob/main/docs/assets/benchmarks/tau-retail-rsi.json",
+  "checked_on": "2026-11-09"
+}

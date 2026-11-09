@@ -1,6 +1,6 @@
 ---
 title: "揭示不确定性：多模态大语言模型的校准与性能"
-title_en: "Unveiling Uncertainty: Calibration and Performance of Multimodal Large Language Models"
+title_en: "Unveiling Uncertainty: A Deep Dive into Calibration and Performance of Multimodal Large Language Models"
 collection: publications
 category: conferences
 permalink: /publication/2024-01-01-unveiling-uncertainty/
@@ -9,7 +9,14 @@ date: 2025-01-01
 venue: '第31届国际计算语言学会议（COLING 2025）'
 venue_en: 'Proceedings of the 31st International Conference on Computational Linguistics (COLING 2025)'
 paperurl: 'https://aclanthology.org/2025.coling-main.208.pdf'
-citation: 'Zijun Chen, Wenbo Hu, Guande He, Zhijie Deng, Zheng Zhang, Richang Hong. (2024). "Unveiling Uncertainty: Calibration and Performance of Multimodal Large Language Models"'
+citation: 'Zijun Chen, Wenbo Hu, Guande He, Zhijie Deng, Zheng Zhang, Richang Hong. (2025). "Unveiling Uncertainty: A Deep Dive into Calibration and Performance of Multimodal Large Language Models"'
+selected_order: 1
+venue_short: "COLING 2025"
+authors_html: "Zijun Chen, Wenbo Hu, Guande He, Zhijie Deng, <strong>Zheng Zhang</strong>, Richang Hong"
+summary: "多模态模型是否知道自己不知道？分析校准与不确定性，并通过 IDK 数据集研究模型的自我评估。"
+summary_en: "When do multimodal models recognize uncertainty? A study of calibration and self-assessment using the IDK dataset."
+source_url: "https://aclanthology.org/2025.coling-main.208/"
+
 ---
 
 <div data-language-content="zh" markdown="1">

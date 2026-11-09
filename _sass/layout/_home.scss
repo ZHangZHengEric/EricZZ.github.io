@@ -340,3 +340,29 @@ html[data-theme="dark"] .home-main {
     transition: none;
   }
 }
+
+/* Academic profile: quiet typography, clear research hierarchy. */
+.personal-intro__inner { max-width: 980px; border-left: 3px solid var(--personal-accent); padding-left: clamp(1.25rem, 4vw, 3rem); }
+.personal-intro { padding: 5.5rem 0 4.5rem; }
+.personal-intro h1 { font-size: clamp(2.6rem, 5vw, 4rem); }
+.personal-name-en { display: inline-block; font-size: 0.5em; font-weight: 450; letter-spacing: -0.025em; color: var(--personal-muted); }
+.personal-intro__copy { max-width: 800px; }
+.personal-intro__copy p + p { margin-top: 1rem; }
+.personal-links .resume-primary { background: var(--personal-ink); color: var(--personal-soft); padding: 0.65rem 1rem; border-radius: 5px; }
+.personal-links { align-items: center; }
+.section-note { font-size: 0.72rem; color: var(--personal-muted); letter-spacing: 0.04em; }
+.research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.research-topic { border-top: 2px solid #2457d6; padding-top: 1rem; }
+.research-topic__number { color: #5373a7; font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+.research-topic h3 { margin: 1rem 0 0.8rem; font-size: 1.15rem; color: var(--personal-ink, var(--personal-page-ink)); }
+.research-topic p { font-size: 0.92rem; line-height: 1.85; color: var(--personal-muted, var(--personal-page-muted)); margin: 0; }
+.personal-work__item--featured { background: var(--personal-soft); padding: 2rem 1.5rem; border-left: 3px solid var(--personal-accent); }
+.personal-work__item--featured .personal-work__link { margin: 1rem 0 0; }
+a:focus-visible, button:focus-visible { outline: 2px solid #5688ed; outline-offset: 5px; }
+@media (min-width: 761px) { .personal-work__item { grid-template-columns: 140px 210px minmax(0, 1fr); gap: 1.5rem; } }
+@media (max-width: 760px) {
+  .personal-intro { padding: 3.5rem 0; }
+  .research-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+  .personal-section__header { flex-wrap: wrap; gap: 0.8rem; }
+  .personal-work__item--featured { padding: 1.5rem; }
+}

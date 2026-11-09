@@ -175,7 +175,7 @@
 .greedy-nav {
   flex: 1 1 auto;
   position: relative;
-  min-width: 250px;
+  min-width: 0;
   background: transparent;
 
   a {
@@ -206,6 +206,7 @@
 
   .visible-links {
     display: table;
+    width: max-content;
 
     li {
       display: table-cell;
@@ -213,7 +214,7 @@
 
       &:first-child {
         font-weight: bold;
-        text-wrap: wrap;
+        white-space: nowrap;
 
         a {
           margin-left: 0;
